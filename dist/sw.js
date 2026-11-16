@@ -1,0 +1,6 @@
+const CACHE='mytt-33354096fff6c475';const ASSETS=["./", "./index.html", "./style.css", "./core.js", "./app.js", "./bundle.js", "./bundle.json", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./verification.html"];
+self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('mytt-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==self.location.origin)return;
+if(u.pathname.endsWith('/bundle.json')){e.respondWith(fetch(e.request).then(async r=>{if(!r.ok)throw Error('HTTP');const clone=r.clone();const v=await clone.json();if(v.data?.schemaVersion!==3||!v.holidays?.days||!v.status)throw Error('schema');const c=await caches.open(CACHE);await c.put(e.request,r.clone());return r}).catch(async()=>{const r=await caches.match(e.request);if(!r)return Response.error();const h=new Headers(r.headers);h.set('X-Timetable-Offline','1');return new Response(await r.arrayBuffer(),{status:r.status,headers:h})}));return;}
+e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));});

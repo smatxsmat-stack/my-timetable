@@ -1,0 +1,4520 @@
+<!doctype html><html><head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Script-type" content="text/javascript">
+		<meta http-equiv="Content-Style-type" content="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+		<meta property="og:image" content="https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/OGPimage.png">
+		<meta name="format-detection" content="telephone=no">
+		<title>各駅時刻表 | 鉄道・駅の情報 | 快適生活サポート事業グループ　ながでんグループ</title>
+		<meta name="description" content="長野電鉄全線の各駅時刻表です。">
+		
+		<link rel="shortcut icon" href="https://www.nagaden-net.co.jp/hubfs/nagaden2024/common/img/base/favicon_nagaden.ico">
+		
+
+		<!-- js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+		
+		
+		
+		
+		
+		
+		
+		<script>
+			if(location.protocol == 'http:'){
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = 'http://transer.com/atasp/pagetrans2/crosslanguage-translate.php?clientid=yv';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(script, s);
+			}
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('#sp-menu').sidr({
+					side: 'right'
+				});
+				$(".changeBtn").click(function(){
+					changeBoxSize();
+				});
+				//tel
+				var ua = navigator.userAgent;
+				if(ua.indexOf('iPad') > 0 || ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0){
+					$('.tel-link').each(function(){
+						var str = $(this).text();
+						$(this).html($('<a>').attr('href', 'tel:' + str.replace(/-/g, '')).append(str + '</a>'));
+					});
+				}
+			});
+		</script>
+		<script>
+			jQuery(function(e){var t,n,r,i,s,o,u,a;n=e(".localNavi a");if(!n.length){return}r=location.pathname.match("(.+)(?:index.php)?")[1];i=r.split("/");for(o=u=0,a=i.length;0<=a?u<=a:u>=a;o=0<=a?++u:--u){s=i.join("/");if(!/^.+(\.php|\/)$/.test(s)){s+="/"}t=n.filter("[href$='"+s+"']");if(t.length){t.addClass("active");return}i.pop()}});
+			jQuery(function(e){var t=e("[data-datetime]");if(!t.length){return}var n=new Date;n.setHours(0,0,0,0);n.setDate(n.getDate()-14);t.each(function(){var t=e(this);var r=new Date(t.data("datetime"));r.setHours(0,0,0,0);if(n.getTime()<r.getTime()){t.after(' <img src="<?= $path; ?>/common/img/info/goods/ico_new.png" alt="NEW" class="new">')}})});
+			jQuery(function(e){e(".accordion .close .active").closest(".close").find(".btn").addClass("open").next().show()});
+		</script>
+<!-- 		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+															})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-18572352-44', 'auto');
+			ga('send', 'pageview');
+		</script> -->
+
+
+		<!-- css -->
+		
+		
+		
+		<style>
+			.localNavi .goods {
+				display: none;
+			}
+			.info.goods .localNavi .goods {
+				display: block;
+			}
+			a[href^="tel"] {
+				color: inherit;
+				text-decoration: none;
+				pointer-events: none;
+				cursor: default;
+			}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:description" content="長野電鉄全線の各駅時刻表です。">
+    <meta property="og:title" content="各駅時刻表 | 鉄道・駅の情報 | 快適生活サポート事業グループ　ながでんグループ">
+    <meta name="twitter:description" content="長野電鉄全線の各駅時刻表です。">
+    <meta name="twitter:title" content="各駅時刻表 | 鉄道・駅の情報 | 快適生活サポート事業グループ　ながでんグループ">
+
+    
+
+    
+
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166764266548/1751440861230/template_import.css">
+<link rel="stylesheet" href="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/186371826478/1740016447362/template_default-modules.min.css">
+<link rel="stylesheet" href="https://www.nagaden-net.co.jp/hubfs/hub_generated/module_assets/1/167676751158/1740913238795/module_.css">
+
+    
+
+
+    
+<!--  Added by GoogleTagManager integration -->
+<script data-cookieconsent="ignore">
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+var waitForUpdateMillis = 1000;
+
+if (useGoogleConsentModeV2) {
+
+  gtag('set','developer_id.dZTQ1Zm',true);
+
+  gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': waitForUpdateMillis
+  });
+}
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    if (useGoogleConsentModeV2) {
+      _hsp.push(['useGoogleConsentModeV2'])
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PZV7H28Q');
+
+    window._hsGtmLoadOnce = true;
+};
+
+_hsp.push(['addPrivacyConsentListener', function(consent){
+  if(consent.allowed || (consent.categories && consent.categories.analytics)){
+    hsLoadGtm();
+  }
+}]);
+
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <link rel="canonical" href="https://www.nagaden-net.co.jp/info/timetable/">
+
+
+<meta property="og:url" content="https://www.nagaden-net.co.jp/info/timetable/">
+<meta name="twitter:card" content="summary">
+<meta http-equiv="content-language" content="ja">
+
+
+
+
+
+
+	<meta name="generator" content="HubSpot"></head>
+
+	<body>
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZV7H28Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+		
+		<div id="" class="  hs-content-id-167685859498 hs-site-page page ">
+			
+			<div id="hs_cos_wrapper_module_171522087942118" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<style>
+	#hs_cos_wrapper_module_171522087942118 nav.sp,
+#hs_cos_wrapper_module_171522087942118 .custom-select_sp { display:none; }
+
+#hs_cos_wrapper_module_171522087942118 #globalHeader { background-color:#FFFFFF; }
+
+#hs_cos_wrapper_module_171522087942118 #headerWrapper {
+  margin:0 auto 0 auto;
+  padding:0 15px;
+  max-width:1300px;
+  position:relative;
+  display:flex;
+  justify-content:space-between;
+}
+
+#hs_cos_wrapper_module_171522087942118 #site-title {
+  display:flex;
+  align-items:center;
+}
+
+#hs_cos_wrapper_module_171522087942118 #site-title img {
+  width:415px;
+  height:48px;
+}
+
+#hs_cos_wrapper_module_171522087942118 #sp-menu { display:none; }
+
+#hs_cos_wrapper_module_171522087942118 #headerNavi {
+  position:absolute;
+  top:40px;
+  right:200px;
+}
+
+#hs_cos_wrapper_module_171522087942118 #headerNavi ul li {
+  padding:0 20px 0 0;
+  float:right;
+  display:inline-block;
+}
+
+#hs_cos_wrapper_module_171522087942118 #headerNavi ul li a {
+  text-indent:-9999px;
+  background-image:url(/hubfs/45439183/nagaden2024/common/base/tit_inquiry.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  width:87px;
+  height:28px;
+  display:block;
+}
+
+#hs_cos_wrapper_module_171522087942118 .search_box {
+  width:184px;
+  height:36px;
+  display:none;
+}
+
+#hs_cos_wrapper_module_171522087942118 form.gsc-search-box {
+  margin:0 !important;
+  padding:0 !important;
+}
+
+#hs_cos_wrapper_module_171522087942118 td.gsib_a input[role="textbox"] { color:#333 !important; }
+
+#hs_cos_wrapper_module_171522087942118 table.gsc-search-box {
+  border:solid 1px #ddd !important;
+  margin:0 !important;
+}
+
+#hs_cos_wrapper_module_171522087942118 table.gsc-input {
+  margin:0;
+  border:none !important;
+}
+
+#hs_cos_wrapper_module_171522087942118 .gsc-input-box { border:none !important; }
+
+#hs_cos_wrapper_module_171522087942118 td.gsc-input,
+#hs_cos_wrapper_module_171522087942118 td.gsc-search-button {
+  margin:0 !important;
+  padding:0 !important;
+  border:none !important;
+}
+
+#hs_cos_wrapper_module_171522087942118 td.gsib_a input {
+  font-size:13px;
+  background:none !important;
+  padding:10px 15px !important;
+  font-weight:500 !important;
+}
+
+#hs_cos_wrapper_module_171522087942118 td.gsib_a input:focus { color:#333 !important; }
+
+#hs_cos_wrapper_module_171522087942118 td.gsib_a input::placeholder { color:#333 !important; }
+
+#hs_cos_wrapper_module_171522087942118 td input[type=text]::placeholder { color:#777; }
+
+#hs_cos_wrapper_module_171522087942118 td.gsib_a input:focus { background:none !important; }
+
+#hs_cos_wrapper_module_171522087942118 td.gsib_a input:change { background:none !important; }
+
+#hs_cos_wrapper_module_171522087942118 .gsib_a {
+  padding:0 !important;
+  border:none !important;
+}
+
+#hs_cos_wrapper_module_171522087942118 .gsib_b { display:none !important; }
+
+#hs_cos_wrapper_module_171522087942118 .gsc-search-button-v2 {
+  background-color:#fff !important;
+  border:none !important;
+  padding-right:15.5px !important;
+}
+
+#hs_cos_wrapper_module_171522087942118 .gsc-search-button-v2 svg {
+  fill:#333 !important;
+  width:17px !important;
+  height:17px !important;
+}
+
+#hs_cos_wrapper_module_171522087942118 #headerWrapper .lang li a {
+  color:#666;
+  font-size:14px;
+}
+
+#hs_cos_wrapper_module_171522087942118 .sidr {
+  margin:65px 0 0 auto;
+  font-weight:bold;
+  font-size:20px;
+}
+
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item {
+  float:left;
+  background-image:url(/hubfs/45439183/nagaden2024/common/img/common/bg_navi_border.gif);
+  background-repeat:no-repeat;
+  background-size:1px 32px;
+  background-position:0 center;
+  padding:0 20px 0 20px;
+}
+
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item:first-child {
+  background-image:none;
+  padding-left:0;
+  padding-right:10px;
+}
+
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item:last-child { padding-right:0; }
+
+#hs_cos_wrapper_module_171522087942118 a.globalNavi-title {
+  padding:20px 20px 20px 0;
+  display:block;
+  text-decoration:none;
+  box-sizing:border-box;
+  color:#333333;
+  position:relative;
+  background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/header-title-icon.svg);
+  background-repeat:no-repeat;
+  background-position:100% 50%;
+}
+
+#hs_cos_wrapper_module_171522087942118 a.globalNavi-title:after {
+  bottom:0;
+  content:"";
+  height:3px;
+  left:0;
+  position:absolute;
+  visibility:hidden;
+}
+
+#hs_cos_wrapper_module_171522087942118 #gnavi01 a.globalNavi-title:after { width:59.2px; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi02 a.globalNavi-title:after { width:220px; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi03 a.globalNavi-title:after { width:100px; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi04 a.globalNavi-title:after { width:79.4px; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi05 a.globalNavi-title:after { width:177.6px; }
+
+#hs_cos_wrapper_module_171522087942118 #globalNavi li a:hover { color:#E30419; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi03 a.globalNavi-title:hover,
+#hs_cos_wrapper_module_171522087942118 #gnavi04 a.globalNavi-title:hover { cursor:default; }
+
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item:hover a.globalNavi-title:after {
+  content:"";
+  background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/header-title-hover.svg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  display:block;
+  height:5px;
+  position:absolute;
+  bottom:0px;
+  margin:0 0 0 0;
+}
+
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item:hover a.globalNavi-title:before {
+  content:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/header-hov-icon2.svg);
+  position:absolute;
+  top:62px;
+  z-index:99;
+}
+
+#hs_cos_wrapper_module_171522087942118 #gnavi01 a.globalNavi-title:before { display:none; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi02 a.globalNavi-title:before { left:100px; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi03 a.globalNavi-title:before { left:35px; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi04 a.globalNavi-title:before { left:24px; }
+
+#hs_cos_wrapper_module_171522087942118 #gnavi05 a.globalNavi-title:before { left:68px; }
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu,
+#hs_cos_wrapper_module_171522087942118 .hov-menu__inner {
+  z-index:3;
+  position:absolute;
+  visibility:hidden;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu {
+  top:116%;
+  right:0;
+  background-color:#fff;
+  min-height:210px;
+  display:block;
+  padding:50px 20px 40px 20px;
+  box-shadow:0px 5px 15px -5px #777777;
+  border-radius:10px;
+  column-count:3;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__item {
+  margin:0 20px 25px 20px;
+  break-inside:avoid;
+}
+
+#hs_cos_wrapper_module_171522087942118 span.hov-menu__nolink {
+  border-bottom:solid 1px #CCCCCC;
+  display:block;
+  padding:0px 0 10px 0;
+}
+
+#hs_cos_wrapper_module_171522087942118 a.hov-menu__link {
+  border-bottom:solid 1px #CCCCCC;
+  display:block;
+  padding:0px 0 10px 0;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__title {
+  font-weight:bold;
+  font-size:18px;
+}
+
+#hs_cos_wrapper_module_171522087942118 a .hov-menu__title { padding-left:15px; }
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__item a {
+  text-decoration:none;
+  display:block;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__content {
+  text-decoration:none;
+  font-weight:normal;
+  font-size:18px;
+  display:block;
+  padding-left:25px;
+}
+
+#hs_cos_wrapper_module_171522087942118 .header_link__icon {
+  background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/header_submenu__icon.svg);
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position-y:50%;
+  background-position-x:left;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__title.header_link__icon { background-position-y:50%; }
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__content.header_link__icon {
+  display:inline;
+  padding-right:20px;
+  background-position-x:100%,8%;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__item a:first-of-type .hov-menu__content__depth2 { margin-top:13px; }
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__content__depth2 {
+  margin-top:10px;
+  white-space:nowrap;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__content__depth2.header_link__icon {
+  background-position-x:8px;
+  display:inline-block;
+}
+
+#hs_cos_wrapper_module_171522087942118 .header_blank__icon {
+  background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/header_blank__icon.svg),url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/header_submenu__icon.svg);
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position-y:50%;
+  background-position-x:right,left;
+  padding-right:20px;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__content__depth2.header_blank__icon {
+  background-position-x:100%,8px;
+  display:inline-block;
+}
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__icon2:before { left:30%; }
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__icon3:before { left:50%; }
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__icon4:before { left:70%; }
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__icon5:before { left:90%; }
+
+#hs_cos_wrapper_module_171522087942118 .hov-menu__inner {
+  display:block;
+  padding:10px 0;
+  height:20px;
+  width:10000px;
+  left:-100%;
+  background-color:rgba(0,0,0,0);
+  position:absolute;
+}
+
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item:hover a.globalNavi-title:after,
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item:hover a.globalNavi-title:before,
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item:hover ul.hov-menu,
+#hs_cos_wrapper_module_171522087942118 #globalNavi li.globalNavi-item:hover span.hov-menu__inner,
+#hs_cos_wrapper_module_171522087942118 span.hov-menu__inner:hover ul.hov-menu { visibility:visible; }
+
+#hs_cos_wrapper_module_171522087942118 .drawer_hidden { display:none; }
+
+#hs_cos_wrapper_module_171522087942118 .drawer_open {
+  display:block;
+  height:50px;
+  width:50px;
+  position:relative;
+  z-index:100;
+  cursor:pointer;
+}
+
+#hs_cos_wrapper_module_171522087942118 .drawer_open span:after {
+  position:absolute;
+  top:55%;
+  left:50%;
+  flex-shrink:1;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+}
+
+#hs_cos_wrapper_module_171522087942118 .nav_content {
+  background-color:#fff;
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:80px;
+  left:100%;
+  z-index:99;
+  transition:.3s;
+  overflow-y:scroll;
+}
+
+#hs_cos_wrapper_module_171522087942118 #drawer_input:checked~.nav_content { left:0; }
+
+#hs_cos_wrapper_module_171522087942118 #drawer_input:checked~body { overflow-y:hidden; }
+
+#hs_cos_wrapper_module_171522087942118 .header_navi_sp {
+  display:flex;
+  flex-direction:column;
+}
+
+#hs_cos_wrapper_module_171522087942118 #headerWrapper .lang {
+  display:flex;
+  align-items:center;
+  position:absolute;
+  top:15%;
+  right:0;
+}
+
+#hs_cos_wrapper_module_171522087942118 #headerWrapper .lang li { margin-right:20px; }
+
+#hs_cos_wrapper_module_171522087942118 #headerWrapper .lang li.lang_icon:hover { cursor:pointer; }
+
+#hs_cos_wrapper_module_171522087942118 #headerWrapper .lang li a { text-decoration:none; }
+
+#hs_cos_wrapper_module_171522087942118 #headerWrapper .lang li a:hover { text-decoration:underline; }
+
+#hs_cos_wrapper_module_171522087942118 .lang_icon {
+  position:relative;
+  margin-left:28px;
+}
+
+#hs_cos_wrapper_module_171522087942118 .lang_icon select {
+  font-size:14px;
+  font-weight:normal;
+  color:#666666;
+  border:none;
+}
+
+#hs_cos_wrapper_module_171522087942118 .lang_icon i {
+  position:absolute;
+  content:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/lang-icon.svg);
+  width:20px;
+  height:20px;
+  display:block;
+  left:-28px;
+  top:3px;
+}
+
+@media screen and (max-width:1300px) {
+  #hs_cos_wrapper_module_171522087942118 #site-title img {
+    width:354px;
+    height:41px;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .globalNavi-title { font-size:16px; }
+
+  #hs_cos_wrapper_module_171522087942118 .hov-menu__title,
+  #hs_cos_wrapper_module_171522087942118 .hov-menu__content { font-size:16px; }
+
+  #hs_cos_wrapper_module_171522087942118 #gnavi01 a.globalNavi-title:after { width:47px; }
+
+  #hs_cos_wrapper_module_171522087942118 #gnavi02 a.globalNavi-title:after { width:180px; }
+
+  #hs_cos_wrapper_module_171522087942118 #gnavi03 a.globalNavi-title:after { width:84px; }
+
+  #hs_cos_wrapper_module_171522087942118 #gnavi04 a.globalNavi-title:after { width:67px; }
+
+  #hs_cos_wrapper_module_171522087942118 #gnavi05 a.globalNavi-title:after { width:145px; }
+}
+
+@media screen and (max-width:1099px) {
+  #hs_cos_wrapper_module_171522087942118 .custom-select { display:none; }
+
+  #hs_cos_wrapper_module_171522087942118 .custom-select_sp {
+    display:flex;
+    top:40%;
+    right:17%;
+    position:absolute;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #linkSelector_sp { margin-left:5px; }
+
+  #hs_cos_wrapper_module_171522087942118 .custom-select img { cursor:pointer; }
+
+  #hs_cos_wrapper_module_171522087942118 #globalHeader {
+    overflow:hidden;
+    width:100%;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #site-title img {
+    width:250px;
+    height:28px;
+    margin-left:15px;
+    float:left;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #sp-menu {
+    display:block;
+    background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/common/img/base/sp/btn_menu.png);
+    background-repeat:no-repeat;
+    width:50px;
+    height:50px;
+    text-indent:-9999px;
+    float:right;
+    margin:32px 19px 0 0;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #headerNavi {
+    position:relative;
+    top:0;
+    right:0;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #headerNavi ul {
+    letter-spacing:-.4em;
+    border-bottom:none;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #headerNavi ul li {
+    border-top:1px solid #fff;
+    border-bottom:1px solid #dfdfdf;
+    border-right-width:0;
+    padding:0;
+    float:none;
+    display:block;
+    letter-spacing:normal;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #headerNavi ul li a {
+    text-indent:0;
+    background-image:none;
+    width:auto;
+    height:auto;
+    display:block;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #headerWrapper form { display:none; }
+
+  #hs_cos_wrapper_module_171522087942118 .sidr,
+  #hs_cos_wrapper_module_171522087942118 #globalNavi,
+  #hs_cos_wrapper_module_171522087942118 .lang { display:none; }
+
+  #hs_cos_wrapper_module_171522087942118 nav.sp {
+    display:block;
+    margin:10px -5px 10px auto;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .drawer_open span {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/sp-menu-icon.svg);
+    background-size:cover;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .faq-list { margin-top:10px; }
+
+  #hs_cos_wrapper_module_171522087942118 .faq-list__question {
+    display:flex;
+    justify-content:space-between;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .faq-list__icon {
+    display:block;
+    background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/humberger-opne.svg);
+    background-repeat:no-repeat;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .faq-list__list dt {
+    border-top:solid 1px #CCCCCC;
+    background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/info_link-icon3.svg);
+    background-repeat:no-repeat;
+    background-position-x:25px;
+    background-position-y:center;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .faq-list__list dd { display:none; }
+
+  #hs_cos_wrapper_module_171522087942118 .drawer_hidden:checked+.drawer_open+.nav_content { display:block; }
+
+  #hs_cos_wrapper_module_171522087942118 .menu__title_link {
+    font-size:14px;
+    color:#132085;
+    padding:18px 15px 18px 40px;
+    font-weight:bold;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .menu__sub_link {
+    font-size:14px;
+    padding:15px 0 15px 53px;
+    color:#132085;
+    display:block;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .accordion_title.header_link__icon { background-position-x:25px; }
+
+  #hs_cos_wrapper_module_171522087942118 .accordion li.accordion_title_item:first-child { border-top:solid 1px #CCCCCC; }
+
+  #hs_cos_wrapper_module_171522087942118 .accordion_title {
+    display:block;
+    font-size:14px;
+    padding:18px 0 18px 40px;
+    color:#132085;
+    font-weight:700;
+    border-top:solid 1px #CCCCCC;
+    text-decoration:none;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .accordion_title_item:first-child .accordion_title { border:none; }
+
+  #hs_cos_wrapper_module_171522087942118 li.accordion_title_item { position:relative; }
+
+  #hs_cos_wrapper_module_171522087942118 span.btn {
+    background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/humberger-opne.svg);
+    background-repeat:no-repeat;
+    display:block;
+    width:20px;
+    height:20px;
+    position:absolute;
+    right:25px;
+    top:15px;
+    z-index:2;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 span.btn.open { background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/humberger-close.svg); }
+
+  #hs_cos_wrapper_module_171522087942118 .accordion_child_item .header_link__icon { background-position-x:10px; }
+
+  #hs_cos_wrapper_module_171522087942118 .accordion_child_item_text {
+    display:block;
+    font-size:14px;
+    padding:15px 0 15px 25px;
+    margin:0 25px 0 25px;
+    text-decoration:none;
+    font-weight:700;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 a.accordion_child_item_text {
+    padding-left:25px;
+    border-bottom:solid 1px #ccc;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .accordion_grandchild_item_text {
+    display:block;
+    font-size:14px;
+    padding:0px 0 15px 50px;
+    margin:0 25px 0 25px;
+    text-decoration:none;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 ul.first li:last-child .accordion_child_item_text { border-bottom:none; }
+
+  #hs_cos_wrapper_module_171522087942118 .accrodion_grandchild_item:last-child .accordion_grandchild_item_text { border-bottom:solid 1px #ccc; }
+
+  #hs_cos_wrapper_module_171522087942118 .accordion_grandchild_item_text.header_link__icon {
+    background-position-x:30px;
+    background-position-y:20%;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .accrodion-balnk {
+    background-image:url(https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/header_blank__icon.svg);
+    background-repeat:no-repeat;
+    padding-right:20px;
+    background-position-x:right;
+    background-position-y:center;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .accrodion-sub {
+    padding:18px 0px 0px 25px;
+    border-top:solid 1px #ccc;
+    height:50%;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .accrodion-sub ul li { padding-bottom:10px; }
+
+  #hs_cos_wrapper_module_171522087942118 .accrodion-sub ul li a {
+    color:#666666;
+    font-size:12px;
+    font-weight:700;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #hs_cos_wrapper_module_171522087942118 #headerWrapper {
+    background-size:18px;
+    background-position-x:77%,67%;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 #site-title img {
+    width:207px;
+    height:24px;
+    margin-left:0;
+  }
+
+  #hs_cos_wrapper_module_171522087942118 .drawer_open { width:46px; }
+}
+
+</style>
+
+<header id="globalHeader" class="clearfix">
+	<div id="headerWrapper" class="clearfix">
+		<a id="site-title" href="/?hsLang=ja" title="快適生活サポート事業グループ　ながでんグループ">
+			<img src="https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/logo.png">
+		</a>
+		<div class="sidr">
+			<nav id="globalNavi">
+				<ul class="clearfix globalNavi-menu">
+					
+					
+					<li id="gnavi01" class="globalNavi-item">
+						<a class="globalNavi-title" style="background: none;" href="https://www.nagaden-net.co.jp/?hsLang=ja" title="ホーム">
+							ホーム
+						</a>
+
+				
+						
+					</li>
+					
+					
+					<li id="gnavi02" class="globalNavi-item">
+						<a class="globalNavi-title" href="https://www.nagaden-net.co.jp/info?hsLang=ja" title="鉄道・駅のご利用案内">
+							鉄道・駅のご利用案内
+						</a>
+
+				
+						
+						<span class="hov-menu__inner"></span>
+						<ul class="hov-menu hov-menu__icon2 ">
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/info/timetable/" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											時刻表・運賃表
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/info/station?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											各駅情報
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://nagaden-reserve.jp/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											特急列車 指定席WEB予約
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/info/ticket?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											きっぷ・定期券
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/info/seatselection/?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											イベント列車
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/info/goods?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											鉄道グッズ
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="/info/goods/tag/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E8%A8%98%E5%BF%B5%E5%88%87%E7%AC%A6?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											記念乗車券
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://nagaden-reserve.jp/cycle/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											サイクルトレイン
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://nagaden-reserve.jp/certificate/cgi/late_table/index.cgi" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											遅延証明書
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/news/2021/05/post-320?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											お忘れ物
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/info/wheelchair?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											バリアフリー情報
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/info/faq?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											よくある質問
+										</span>
+										
+										</a>
+									
+								
+								
+								
+									<span class="hov-menu__content hov-menu__content__depth2
+															 
+															 ">
+										
+									</span>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-nagano.jp/" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											駅・電車広告
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+						</ul><!--hov-menu-->
+						
+					</li>
+					
+					
+					<li id="gnavi03" class="globalNavi-item">
+						<a class="globalNavi-title" title="おでかけ">
+							おでかけ
+						</a>
+
+				
+						
+						<span class="hov-menu__inner"></span>
+						<ul class="hov-menu hov-menu__icon3 ">
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											バスに乗る
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagadenbus.co.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										長電バス
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											タクシーに乗る
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagadentaxi.co.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										つばめ長電タクシー
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											旅行に行く
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://nagaden-kanko.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										長電観光
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											観光する
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://jigokudani-yaenkoen.co.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										地獄谷野猿公苑
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://www.oasisobuse.co.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										小布施ハイウェイオアシス
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="http://www.senjukaku.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										上林ホテル 仙壽閣
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://nozawagrandhotel.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										野沢グランドホテル
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											ガソリンを入れる
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/carlife/hokushinbeiyu?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										北信米油
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											駐車場
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/parking?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										長電パーキング
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+						</ul><!--hov-menu-->
+						
+					</li>
+					
+					
+					<li id="gnavi04" class="globalNavi-item">
+						<a class="globalNavi-title" title="暮らす">
+							暮らす
+						</a>
+
+				
+						
+						<span class="hov-menu__inner"></span>
+						<ul class="hov-menu hov-menu__icon4 ">
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											家・土地を買う/売る
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/estate/nagadenfudousan?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										不動産事業部
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											家を建てる
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagadenkensetu.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										長電建設
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://nagano.bess.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										BESS長野
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											家を借りる
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="http://www.erfolg-ap.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										アパマンショップ（エアフォルク）
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											レンタル収納
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/estate/mono-key?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										モノキー吉田
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											車を買う
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://nagano-mitsubishi.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										長野三菱自動車販売
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											ガソリンを入れる
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/carlife/hokushinbeiyu?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										北信米油
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											駐車場（月極／時間貸し）
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/parking?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										長電パーキング
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											車検・点検
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagadenbus.co.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										長電バス
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://nagano-mitsubishi.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										長野三菱自動車販売
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/carlife/hokushinbeiyu?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										北信米油
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											スイミング・フィットネス
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://nagaden-wellness.co.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										フィットネスクラブ エフバイエー<br>ながでんスイミングスクール<br>（ながでんウェルネス）
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											損害保険・生命保険
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/life/hoken?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										長野電鉄保険部
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											介護・福祉
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://nagaden-wellness.co.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										ながでんハートネット<br>（ながでんウェルネス）
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/life/house?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										サービス付き高齢者向け住宅
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+						</ul><!--hov-menu-->
+						
+					</li>
+					
+					
+					<li id="gnavi05" class="globalNavi-item">
+						<a class="globalNavi-title" href="https://www.nagaden-net.co.jp/group?hsLang=ja" title="ながでんグループ">
+							ながでんグループ
+						</a>
+
+				
+						
+						<span class="hov-menu__inner"></span>
+						<ul class="hov-menu hov-menu__icon5 ">
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											長野電鉄株式会社
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/info?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										鉄道事業部
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/estate/nagadenfudousan?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										不動産事業部
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/parking?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										管財部
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://nagaden-kanko.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										旅行部
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://www.nagaden-nagano.jp/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										広告部
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/life/hoken.php?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										保険部
+									</span>
+									
+								</a>
+								
+								
+								
+								
+								<a href="https://www.nagaden-net.co.jp/group/train/shop?hsLang=ja">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 ">
+										関連事業部
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagadenbus.co.jp/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											長電バス株式会社
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagadentaxi.co.jp/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											つばめ長電タクシー株式会社
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://nagatec.co.jp/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											長電テクニカルサービス株式会社
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://nagano-mitsubishi.com/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											長野三菱自動車販売株式会社
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagaden-net.co.jp/group/carlife/hokushinbeiyu?hsLang=ja" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											北信米油株式会社
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://nagaden-wellness.co.jp/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											株式会社ながでんウェルネス
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.nagadenkensetu.com/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											長電建設株式会社
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="http://www.erfolg-ap.com/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											株式会社エアフォルク
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+									<span class="hov-menu__nolink">
+										
+										<span class="hov-menu__title 
+																 
+																 ">
+											株式会社長電ホテルズ
+										</span>
+										
+									</span>
+								
+								
+								
+								
+								<a href="http://www.senjukaku.com/" target="_blank" rel="noopener">
+									
+									<span class="hov-menu__content hov-menu__content__depth2
+															 header_link__icon
+															 header_blank__icon">
+										上林ホテル仙壽閣
+									</span>
+									
+								</a>
+								
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://www.oasisobuse.co.jp/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											株式会社小布施ハイウェイオアシス
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://jigokudani-yaenkoen.co.jp/" class="hov-menu__link" target="_blank" rel="noopener">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 header_blank__icon">
+											株式会社地獄谷野猿公苑
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+							
+							<li class="hov-menu__item">
+
+								
+								<a href="https://nozawagrandhotel.com/" class="hov-menu__link">
+									
+										<span class="hov-menu__title 
+																 header_link__icon
+																 ">
+											株式会社野沢グランドホテル
+										</span>
+										
+										</a>
+									
+								
+							</li>
+							
+						</ul><!--hov-menu-->
+						
+					</li>
+					
+				</ul><!--globalNavi-menu-->
+
+			</nav>
+
+			<ul class="lang">
+					
+				
+				<li>
+					<a href="https://www.nagaden-net.co.jp/news?hsLang=ja" class="">
+						お知らせ
+					</a>
+				</li>
+					
+				
+				<li>
+					<a href="https://www.nagaden-net.co.jp/company?hsLang=ja" class="">
+						会社情報
+					</a>
+				</li>
+					
+				
+				<li>
+					<a href="https://www.nagaden-net.co.jp/recruit?hsLang=ja" class="">
+						採用情報
+					</a>
+				</li>
+					
+				
+				<li>
+					<a href="https://www.nagaden-net.co.jp/inquiry?hsLang=ja" class="">
+						お問い合わせ
+					</a>
+				</li>
+				
+			
+				<li class="lang_icon">
+					<i class=""></i>
+					<select id="linkSelector">
+						<option value="" disabled selected>Language</option>
+						<option value="https://www.nagaden-net.co.jp/">日本語</option>
+						<option value="https://www.nagaden-net.co.jp.e.yv.hp.transer.com/?lang=eng">English</option>
+						<option value="https://www.nagaden-net.co.jp.k.yv.hp.transer.com/">韓国語</option>
+						<option value="https://www.nagaden-net.co.jp.t.yv.hp.transer.com/">繁体</option>
+						<option value="https://www.nagaden-net.co.jp.c.yv.hp.transer.com/">簡体</option>
+					</select>
+				</li>
+
+				<li class="search_box">
+					<script async src="https://cse.google.com/cse.js?cx=238a28e47093b4eee">
+					</script>
+					<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-ja" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input placeholder" name="search" title="検索" aria-label="検索" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background: url(&quot;https://www.google.com/cse/static/images/1x/ja/branding.png&quot;) left center no-repeat rgb(255, 255, 255); outline: none;" placeholder="サイト内検索"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="検索ボックスをクリア" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewbox="0 0 13 13"><title>検索</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="結果をクリア">&nbsp;</div></td></tr></tbody></table></form></div></div>
+					<script type="text/javascript">
+						window.onload = function(){
+							let elem = document.getElementById("gsc-i-id1");
+							elem.placeholder = "サイト内検索";
+							elem.classList.add('placeholder');
+						}
+					</script>
+				</li>
+			</ul>
+		</div><!--sidr-->
+
+		
+		<div class="custom-select_sp">
+			<img src="https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/icon/lang-icon.svg" alt="Select Language" id="selectImage_sp">
+			<select id="linkSelector_sp">
+				<option value="" disabled selected>Language</option>
+				<option value="https://www.nagaden-net.co.jp/">日本語</option>
+				<option value="https://www.nagaden-net.co.jp.e.yv.hp.transer.com/">English</option>
+				<option value="https://www.nagaden-net.co.jp.k.yv.hp.transer.com/">韓国語</option>
+				<option value="https://www.nagaden-net.co.jp.t.yv.hp.transer.com/">繁体</option>
+				<option value="https://www.nagaden-net.co.jp.c.yv.hp.transer.com/">簡体</option>
+			</select>
+		</div>
+		
+		<nav class="sp">
+			<input id="drawer_input" class="drawer_hidden" type="checkbox">
+			<label for="drawer_input" class="drawer_open"><span></span></label>
+			<dd class="nav_content">
+				<ul class="accordion">
+					
+					
+					<li class="close accordion_title_item">
+						<a class="accordion_title header_link__icon" href="https://www.nagaden-net.co.jp/?hsLang=ja" title="ホーム">
+							ホーム
+						</a>
+						
+					</li>
+					
+					
+					<li class="close accordion_title_item">
+						<a class="accordion_title header_link__icon" href="https://www.nagaden-net.co.jp/info?hsLang=ja" title="鉄道・駅のご利用案内">
+							鉄道・駅のご利用案内
+						</a>
+						
+						<span class="btn accordion_btn2"></span>
+						<ul class="first" style="display: none;">
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/info/timetable/" title="時刻表・運賃表">
+									
+									時刻表・運賃表
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/info/station?hsLang=ja" title="各駅情報">
+									
+									各駅情報
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://nagaden-reserve.jp/" title="特急列車 指定席WEB予約" target="_blank" rel="noopener">
+									
+									特急列車 指定席WEB予約
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/info/ticket?hsLang=ja" title="きっぷ・定期券">
+									
+									きっぷ・定期券
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/info/seatselection/?hsLang=ja" title="イベント列車">
+									
+									イベント列車
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/info/goods?hsLang=ja" title="鉄道グッズ">
+									
+									鉄道グッズ
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="/info/goods/tag/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E8%A8%98%E5%BF%B5%E5%88%87%E7%AC%A6?hsLang=ja" title="記念乗車券">
+									
+									記念乗車券
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://nagaden-reserve.jp/cycle/" title="サイクルトレイン" target="_blank" rel="noopener">
+									
+									サイクルトレイン
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://nagaden-reserve.jp/certificate/cgi/late_table/index.cgi" title="遅延証明書" target="_blank" rel="noopener">
+									
+									遅延証明書
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/news/2021/05/post-320?hsLang=ja" title="お忘れ物">
+									
+									お忘れ物
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/info/wheelchair?hsLang=ja" title="バリアフリー情報">
+									
+									バリアフリー情報
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/info/faq?hsLang=ja" title="よくある質問">
+									
+									よくある質問
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" style="display: none;" href="" title="">
+											<span class=""></span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-nagano.jp/" title="駅・電車広告">
+									
+									駅・電車広告
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+						</ul>
+						
+					</li>
+					
+					
+					<li class="close accordion_title_item">
+						<a class="accordion_title header_link__icon" href="" title="おでかけ">
+							おでかけ
+						</a>
+						
+						<span class="btn accordion_btn3"></span>
+						<ul class="first" style="display: none;">
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									バスに乗る
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagadenbus.co.jp/" title="長電バス" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">長電バス</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									タクシーに乗る
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagadentaxi.co.jp/" title="つばめ長電タクシー" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">つばめ長電タクシー</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									旅行に行く
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://nagaden-kanko.com/" title="長電観光" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">長電観光</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									観光する
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://jigokudani-yaenkoen.co.jp/" title="地獄谷野猿公苑" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">地獄谷野猿公苑</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.oasisobuse.co.jp/" title="小布施ハイウェイオアシス" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">小布施ハイウェイオアシス</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="http://www.senjukaku.com/" title="上林ホテル 仙壽閣" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">上林ホテル 仙壽閣</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://nozawagrandhotel.com/" title="野沢グランドホテル" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">野沢グランドホテル</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									ガソリンを入れる
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/carlife/hokushinbeiyu?hsLang=ja" title="北信米油">
+											<span class="">北信米油</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									駐車場
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/parking?hsLang=ja" title="長電パーキング">
+											<span class="">長電パーキング</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+						</ul>
+						
+					</li>
+					
+					
+					<li class="close accordion_title_item">
+						<a class="accordion_title header_link__icon" href="https://www.nagaden-net.co.jp/group?hsLang=ja" title="暮らす">
+							暮らす
+						</a>
+						
+						<span class="btn accordion_btn4"></span>
+						<ul class="first" style="display: none;">
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									家・土地を買う/売る
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/estate/nagadenfudousan?hsLang=ja" title="不動産事業部">
+											<span class="">不動産事業部</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									家を建てる
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagadenkensetu.com/" title="長電建設" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">長電建設</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://nagano.bess.jp/" title="BESS長野" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">BESS長野</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									家を借りる
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="http://www.erfolg-ap.com/" title="アパマンショップ（エアフォルク）" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">アパマンショップ（エアフォルク）</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									レンタル収納
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/estate/mono-key?hsLang=ja" title="モノキー吉田">
+											<span class="">モノキー吉田</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									車を買う
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://nagano-mitsubishi.com/" title="長野三菱自動車販売" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">長野三菱自動車販売</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									ガソリンを入れる
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/carlife/hokushinbeiyu?hsLang=ja" title="北信米油">
+											<span class="">北信米油</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									駐車場（月極／時間貸し）
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/parking?hsLang=ja" title="長電パーキング">
+											<span class="">長電パーキング</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									車検・点検
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagadenbus.co.jp/" title="長電バス" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">長電バス</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://nagano-mitsubishi.com/" title="長野三菱自動車販売" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">長野三菱自動車販売</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/carlife/hokushinbeiyu?hsLang=ja" title="北信米油">
+											<span class="">北信米油</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									スイミング・フィットネス
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://nagaden-wellness.co.jp/" title="フィットネスクラブ エフバイエー<br>ながでんスイミングスクール<br>（ながでんウェルネス）" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">フィットネスクラブ エフバイエー<br>ながでんスイミングスクール<br>（ながでんウェルネス）</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									損害保険・生命保険
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/life/hoken?hsLang=ja" title="長野電鉄保険部">
+											<span class="">長野電鉄保険部</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									介護・福祉
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://nagaden-wellness.co.jp/" title="ながでんハートネット<br>（ながでんウェルネス）" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">ながでんハートネット<br>（ながでんウェルネス）</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/life/house?hsLang=ja" title="サービス付き高齢者向け住宅">
+											<span class="">サービス付き高齢者向け住宅</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+						</ul>
+						
+					</li>
+					
+					
+					<li class="close accordion_title_item">
+						<a class="accordion_title header_link__icon" href="https://www.nagaden-net.co.jp/group?hsLang=ja" title="ながでんグループ">
+							ながでんグループ
+						</a>
+						
+						<span class="btn accordion_btn5"></span>
+						<ul class="first" style="display: none;">
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									長野電鉄株式会社
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/info?hsLang=ja" title="鉄道事業部">
+											<span class="">鉄道事業部</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/estate/nagadenfudousan?hsLang=ja" title="不動産事業部">
+											<span class="">不動産事業部</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/parking?hsLang=ja" title="管財部">
+											<span class="">管財部</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://nagaden-kanko.com/" title="旅行部" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">旅行部</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-nagano.jp/" title="広告部" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">広告部</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/life/hoken.php?hsLang=ja" title="保険部">
+											<span class="">保険部</span>
+										</a>
+									</li>
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/train/shop?hsLang=ja" title="関連事業部">
+											<span class="">関連事業部</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagadenbus.co.jp/" title="長電バス株式会社" target="_blank" rel="noopener">
+									
+									長電バス株式会社
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagadentaxi.co.jp/" title="つばめ長電タクシー株式会社" target="_blank" rel="noopener">
+									
+									つばめ長電タクシー株式会社
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://nagatec.co.jp/" title="長電テクニカルサービス株式会社" target="_blank" rel="noopener">
+									
+									長電テクニカルサービス株式会社
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://nagano-mitsubishi.com/" title="長野三菱自動車販売株式会社" target="_blank" rel="noopener">
+									
+									長野三菱自動車販売株式会社
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagaden-net.co.jp/group/carlife/hokushinbeiyu?hsLang=ja" title="北信米油株式会社">
+									
+									北信米油株式会社
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://nagaden-wellness.co.jp/" title="株式会社ながでんウェルネス" target="_blank" rel="noopener">
+									
+									株式会社ながでんウェルネス
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.nagadenkensetu.com/" title="長電建設株式会社" target="_blank" rel="noopener">
+									
+									長電建設株式会社
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="http://www.erfolg-ap.com/" title="株式会社エアフォルク" target="_blank" rel="noopener">
+									
+									株式会社エアフォルク
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<span class="accordion_child_item_text">
+									株式会社長電ホテルズ
+								</span>
+								
+
+
+								<ul class="">
+									
+									
+									<li class="accrodion_grandchild_item">
+										<a class="accordion_grandchild_item_text header_link__icon" href="http://www.senjukaku.com/" title="上林ホテル仙壽閣" target="_blank" rel="noopener">
+											<span class="accrodion-balnk">上林ホテル仙壽閣</span>
+										</a>
+									</li>
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://www.oasisobuse.co.jp/" title="株式会社小布施ハイウェイオアシス" target="_blank" rel="noopener">
+									
+									株式会社小布施ハイウェイオアシス
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://jigokudani-yaenkoen.co.jp/" title="株式会社地獄谷野猿公苑" target="_blank" rel="noopener">
+									
+									株式会社地獄谷野猿公苑
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+							
+
+							<li class="accordion_child_item">
+								
+								<a class="accordion_child_item_text header_link__icon" href="https://nozawagrandhotel.com/" title="株式会社野沢グランドホテル">
+									
+									株式会社野沢グランドホテル
+									
+								</a>
+								
+
+
+								<ul class="">
+									
+								</ul>
+
+
+							</li>
+							
+						</ul>
+						
+					</li>
+					
+				</ul>
+
+				<div class="accrodion-sub">
+					<ul>
+							
+						
+						<li>
+							<a href="https://www.nagaden-net.co.jp/news?hsLang=ja" class="">
+								お知らせ
+							</a>
+						</li>
+							
+						
+						<li>
+							<a href="https://www.nagaden-net.co.jp/company?hsLang=ja" class="">
+								会社情報
+							</a>
+						</li>
+							
+						
+						<li>
+							<a href="https://www.nagaden-net.co.jp/recruit?hsLang=ja" class="">
+								採用情報
+							</a>
+						</li>
+							
+						
+						<li>
+							<a href="https://www.nagaden-net.co.jp/inquiry?hsLang=ja" class="">
+								お問い合わせ
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+
+			</dd>
+		</nav>
+
+	</div>
+</header></div>
+			
+
+			<div class="contents">
+				
+				<div id="hs_cos_wrapper_module_17177233806495" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><style>
+	#hs_cos_wrapper_module_17177233806495 .bread-crumbs {
+  display:flex;
+  overflow-x:auto;
+  margin:0 auto;
+  padding:30px 0 20px 0;
+  width:960px;
+}
+
+#hs_cos_wrapper_module_17177233806495 .bread-crumbs__list {
+  padding:0 34px 0 0;
+  font-size:12px;
+  font-weight:bold;
+  color:#333;
+  position:relative;
+  list-style:none;
+  white-space:nowrap;
+}
+
+#hs_cos_wrapper_module_17177233806495 .bread-crumbs__list::after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:12px;
+  margin:auto;
+  vertical-align:middle;
+  width:5px;
+  height:5px;
+  border-top:1px solid #999999;
+  border-right:1px solid #999999;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+#hs_cos_wrapper_module_17177233806495 .bread-crumbs__list:last-child::after { display:none; }
+
+#hs_cos_wrapper_module_17177233806495 .bread-crumbs__list a {
+  text-decoration:underline;
+  color:#333;
+}
+
+#hs_cos_wrapper_module_17177233806495 .bread-crumbs__list a:hover { text-decoration:none; }
+
+@media screen and (max-width:1099px) {
+  #hs_cos_wrapper_module_17177233806495 .bread-crumbs {
+    padding-right:15px;
+    padding-left:15px;
+  }
+}
+
+@media screen and (max-width:px) {
+  #hs_cos_wrapper_module_17177233806495 .bread-crumbs {}
+}
+
+</style>
+
+
+
+
+<ul class="bread-crumbs" vocab="https://schema.org/" typeof="BreadcrumbList">
+  <li class="bread-crumbs__list" property="itemListElement" typeof="ListItem"><a href="/?hsLang=ja" title="ホーム" property="item" typeof="WebPage"><span property="name">ホーム</span></a>
+    <meta property="position" content="1">
+  </li>
+	
+	
+	
+	<li class="bread-crumbs__list" property="itemListElement" typeof="ListItem">
+		
+		
+		
+		<a href="https://www.nagaden-net.co.jp/info?hsLang=ja" property="item" typeof="WebPage">
+			
+			<span property="name">鉄道・駅の情報</span>
+			
+		</a>
+		
+		<meta property="position" content="2">
+	</li>
+	
+	
+	<li class="bread-crumbs__list" property="itemListElement" typeof="ListItem">
+		
+		
+		
+			<span property="name">時刻表・運賃表</span>
+			
+		<meta property="position" content="3">
+	</li>
+	
+</ul>
+</div>
+				
+				
+<div class="info">
+<div id="wrapper" class="clearfix sizeTarget">
+	<article>
+		<div class="container-fluid">
+<div class="row-fluid-wrapper">
+<div class="row-fluid">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1715914543793" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><h1 class="title01">時刻表・運賃表</h1>
+<h2 class="title02">長野電鉄全線の時刻表</h2>
+<section class="boxWhite">
+	<p>長野電鉄全線の時刻表は以下のPDFをご覧ください。</p>
+	
+	
+	<div class="pdf_btn_wrapper">
+		<a class="pdf_btn" href="https://www.nagaden-net.co.jp/hubfs/ikoku20210313-01-1.pdf?hsLang=ja" target="_blank" rel="noopener">
+			長野電鉄　全線時刻表（PDF）
+		</a>
+		<span class="update_text">（令和3年3月13日改正）</span>
+	</div>
+	
+	<p>※駅毎の時刻表は<a href="/info/station?hsLang=ja" rel="noopener" target="_blank">各駅情報</a>からご覧ください。</p>
+</section>
+
+<h2 class="title02">長野電鉄全線の運賃表</h2>
+<section class="boxWhite">
+	<p>長野電鉄全線の運賃表は以下のPDFをご覧ください。</p>
+	
+	
+	<div class="pdf_btn_wrapper">
+		<a class="pdf_btn" href="https://www.nagaden-net.co.jp/hubfs/unchin_20251201.pdf?hsLang=ja" target="_blank" rel="noopener">
+			長野電鉄　全線運賃表（PDF）
+		</a>
+		<span class="update_text">（令和7年12月1日改定）</span>
+	</div>
+	
+	<p>※駅毎の運賃表は<a href="/info/station?hsLang=ja" rel="noopener" target="_blank">各駅情報</a>からご覧ください。</p>
+</section></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1715919567468" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div>
+</div>
+</div>
+	</article>
+
+	<aside>
+		<div id="hs_cos_wrapper_module_1715856639610136" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><dl class="localNavi">
+	<dt>鉄道・駅の情報</dt>
+	<dd>
+		<ul class="accordion">
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/info?hsLang=ja" title="鉄道・駅の情報 トップ" class="links">
+					鉄道・駅の情報 トップ
+				</a>
+				
+				
+				
+				<ul class="first" style="display: none;">
+					
+				</ul>
+			</li>
+
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/info/timetable/" title="時刻表・運賃表" class="links">
+					時刻表・運賃表
+				</a>
+				
+				
+				
+				<ul class="first" style="display: none;">
+					
+				</ul>
+			</li>
+
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/info/seatselection/?hsLang=ja" title="特急列車座席指定予約・イベント列車" class="links">
+					特急列車座席指定予約・イベント列車
+				</a>
+				
+				
+				
+				<ul class="first" style="display: none;">
+					
+				</ul>
+			</li>
+
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/info/ticket?hsLang=ja" title="各種乗車券" class="links">
+					各種乗車券
+				</a>
+				
+				
+				
+				<ul class="first" style="display: none;">
+					
+				</ul>
+			</li>
+
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/info/station?hsLang=ja" title="各駅情報" class="links">
+					各駅情報
+				</a>
+				
+				
+				<span class="btn">button</span>
+				<ul class="first" style="display: none;">
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/nagano?hsLang=ja" title="長野">
+							
+																											 長野																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/shiyakushomae?hsLang=ja" title="市役所前">
+							
+																											 市役所前																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/gondo?hsLang=ja" title="権堂">
+							
+																											 権堂																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/zenkojishita?hsLang=ja" title="善光寺下">
+							
+																											 善光寺下																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/hongo?hsLang=ja" title="本郷">
+							
+																											 本郷																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/kirihara?hsLang=ja" title="桐原">
+							
+																											 桐原																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/shinanoyoshida?hsLang=ja" title="信濃吉田">
+							
+																											 信濃吉田																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/asahi?hsLang=ja" title="朝陽">
+							
+																											 朝陽																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/fuzokuchugakumae?hsLang=ja" title="附属中学前">
+							
+																											 附属中学前																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/yanagihara?hsLang=ja" title="柳原">
+							
+																											 柳原																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/murayama?hsLang=ja" title="村山">
+							
+																											 村山																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/hino?hsLang=ja" title="日野">
+							
+																											 日野																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/suzaka?hsLang=ja" title="須坂">
+							
+																											 須坂																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/kitasuzaka?hsLang=ja" title="北須坂">
+							
+																											 北須坂																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/obuse?hsLang=ja" title="小布施">
+							
+																											 小布施																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/tsusumi?hsLang=ja" title="都住">
+							
+																											 都住																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/sakurasawa?hsLang=ja" title="桜沢">
+							
+																											 桜沢																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/entoku?hsLang=ja" title="延徳">
+							
+																											 延徳																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/shinshunakano?hsLang=ja" title="信州中野">
+							
+																											 信州中野																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/nakanomatsukawa?hsLang=ja" title="中野松川">
+							
+																											 中野松川																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/shinanotakehara?hsLang=ja" title="信濃竹原">
+							
+																											 信濃竹原																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/yomase?hsLang=ja" title="夜間瀬">
+							
+																											 夜間瀬																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/kamijo?hsLang=ja" title="上条">
+							
+																											 上条																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="https://www.nagaden-net.co.jp/info/station/yudanaka?hsLang=ja" title="湯田中">
+							
+																											 湯田中																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+				</ul>
+			</li>
+
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/news/2022/07/charter-stop?hsLang=ja" title="貸切列車" class="links">
+					貸切列車
+				</a>
+				
+				
+				
+				<ul class="first" style="display: none;">
+					
+				</ul>
+			</li>
+
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/info/faq?hsLang=ja" title="よくあるご質問" class="links">
+					よくあるご質問
+				</a>
+				
+				
+				
+				<ul class="first" style="display: none;">
+					
+				</ul>
+			</li>
+
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/info/goods?hsLang=ja" title="鉄道グッズ" class="links">
+					鉄道グッズ
+				</a>
+				
+				
+				<span class="btn">button</span>
+				<ul class="first" style="display: none;">
+					
+					
+					<li>
+						<a class="links" href="/info/goods/tag/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E9%89%84%E9%81%93%E3%82%B0%E3%83%83%E3%82%BA?hsLang=ja" title="オリジナル鉄道グッズ">
+							
+																											 オリジナル鉄道グッズ																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="/info/goods/tag/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E8%A8%98%E5%BF%B5%E5%88%87%E7%AC%A6?hsLang=ja" title="オリジナル記念切符">
+							
+																											 オリジナル記念切符																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+					
+					<li>
+						<a class="links" href="/info/goods/tag/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E9%89%84%E9%81%93%E3%82%B0%E3%83%83%E3%82%BA%E5%AE%8C%E5%A3%B2%E5%93%81?hsLang=ja" title="オリジナル鉄道グッズ（完売品）">
+							
+																											 オリジナル鉄道グッズ（完売品）																					 
+							
+						</a>
+					
+
+					
+					</li>
+					
+					
+					
+				</ul>
+			</li>
+
+			
+			
+			
+			<li class="close">
+				
+				<a href="https://www.nagaden-net.co.jp/info/wheelchair?hsLang=ja" title="車いすをご利用のお客様へ" class="links">
+					車いすをご利用のお客様へ
+				</a>
+				
+				
+				
+				<ul class="first" style="display: none;">
+					
+				</ul>
+			</li>
+
+			
+		</ul>
+	</dd>       
+</dl></div>
+	</aside>
+
+	<!-- /#wrapper --></div>
+
+</div>
+
+
+
+
+				<div id="hs_cos_wrapper_module_17344853630426" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><style>
+	#hs_cos_wrapper_module_17344853630426 #backToTopBtn {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:100;
+  background-color:transparent;
+  border:none;
+  cursor:pointer;
+  padding:0;
+  opacity:0;
+  transition:opacity 0.5s ease;
+}
+
+#hs_cos_wrapper_module_17344853630426 #backToTopBtn img {
+  transform:rotate(-90deg);
+  width:42px;
+  height:42px;
+}
+
+#hs_cos_wrapper_module_17344853630426 #backToTopBtn:hover img { opacity:0.8; }
+
+#hs_cos_wrapper_module_17344853630426 #backToTopBtn.show { opacity:1; }
+
+</style>
+<button id="backToTopBtn">
+	<img src="https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/slick_next.svg" alt="トップに戻る">
+</button></div>
+
+			</div>
+
+			
+			<footer>
+				
+				<div id="hs_cos_wrapper_module_171524263062434" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><style>
+	#hs_cos_wrapper_module_171524263062434 .footer-sns__wrapper {
+  display:flex;
+  max-width:1160px;
+  margin:0px auto 0 auto;
+  padding:38px 15px 0 15px;
+  justify-content:space-between;
+}
+
+#hs_cos_wrapper_module_171524263062434 .footer-sns__text h1 {
+  font-size:26px;
+  font-weight:bold;
+  line-height:100%;
+  margin-bottom:10px;
+}
+
+#hs_cos_wrapper_module_171524263062434 .footer-sns__text span {
+  font-size:16px;
+  line-height:180%;
+}
+
+#hs_cos_wrapper_module_171524263062434 .footer-sns__text span br.sp { display:none; }
+
+#hs_cos_wrapper_module_171524263062434 .footer-sns__icon {
+  display:flex;
+  align-items:center;
+}
+
+#hs_cos_wrapper_module_171524263062434 .footer-sns__icon a {
+  display:block;
+  margin-right:32px;
+  -webkit-transition:all .5s ease;
+  -moz-transition:all .5s ease;
+  -o-transition:all .5s ease;
+}
+
+#hs_cos_wrapper_module_171524263062434 .footer-sns__icon a:hover { opacity:0.5; }
+
+#hs_cos_wrapper_module_171524263062434 .footer-sns__icon a:last-child { margin-right:0; }
+
+#hs_cos_wrapper_module_171524263062434 .footer-link__wrapper {
+  background-color:#444444;
+  padding:30px 0 30px 0;
+  margin-top:38px;
+  text-align:center;
+}
+
+#hs_cos_wrapper_module_171524263062434 .footer-link__wrapper a {
+  color:#fff;
+  font-size:14px;
+  margin-right:30px;
+  text-decoration:none;
+  border-bottom:solid 1px #444444;
+}
+
+#hs_cos_wrapper_module_171524263062434 .footer-link__wrapper a:hover {
+  opacity:1;
+  border-bottom:solid 1px #fff;
+  box-sizing:　border-box;
+}
+
+#hs_cos_wrapper_module_171524263062434 .footer-link__wrapper a:last-child { margin-right:0; }
+
+#hs_cos_wrapper_module_171524263062434 span.name {
+  font-size:13px;
+  margin:30px 0 14px 0;
+}
+
+#hs_cos_wrapper_module_171524263062434 span.address,
+#hs_cos_wrapper_module_171524263062434 span.tel {
+  line-height:180%;
+  display:block;
+}
+
+#hs_cos_wrapper_module_171524263062434 .tel { text-decoration:none; }
+
+#hs_cos_wrapper_module_171524263062434 .tel a { text-decoration:none; }
+
+#hs_cos_wrapper_module_171524263062434 a.footer-link {
+  color:#132085;
+  text-decoration:underline;
+}
+
+#hs_cos_wrapper_module_171524263062434 a.footer-link:hover { color:#E31919; }
+
+#hs_cos_wrapper_module_171524263062434 p.copyright {
+  margin-top:50px;
+  color:#999;
+}
+
+@media screen and (max-width:1099px) {
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__wrapper {
+    max-width:688px;
+    padding:0 15px;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__text h1 {
+    font-size:20px;
+    margin-bottom:12px;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__text span { font-size:14px; }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__icon img { width:35px; }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__icon a { margin-right:28px; }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-link__wrapper {
+    margin-top:30px;
+    display:flex;
+    justify-content:space-around;
+    padding:30px 15px;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-link__wrapper a {
+    font-size:14px;
+    margin-right:0;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 span.name {
+    font-size:10px;
+    margin:10px 0 15px 0;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-info__wrapper {
+    display:flex;
+    flex-direction:column;
+    margin-right:0;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-info__wrapper a:first-child { margin-bottom:8px; }
+
+  #hs_cos_wrapper_module_171524263062434 p.copyright { margin-top:40px; }
+
+  #hs_cos_wrapper_module_171524263062434 .boxFooter02 img {
+    width:242.9px !important;
+    height:32.6px !important;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__wrapper {
+    display:block;
+    padding:35px 15px 0 15px;
+    text-align:center;
+    margin-top:0;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__text h1 { font-size:20px; }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__text span {
+    font-size:14px;
+    margin-bottom:20px;
+    display:block;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__text span br.sp { display:block; }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-sns__icon { justify-content:center; }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-link__wrapper {
+    margin-top:47.5px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    padding:0;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .footer-link__wrapper a {
+    border:solid 1px #8C8C8C;
+    padding:15px 0;
+    margin-right:0;
+    display:block;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .boxFooter02 {
+    max-width:242px;
+    margin:0 auto;
+  }
+
+  #hs_cos_wrapper_module_171524263062434 .boxFooter02 img.hs-image-widget { width:242px !important; }
+
+  #hs_cos_wrapper_module_171524263062434 span.name { margin-top:15px; }
+}
+
+</style>
+<div class="footer-sns__wrapper">
+	<div class="footer-sns__text">
+		<h1>長野電鉄公式SNS</h1>
+		<span>運行情報やイベント告知など<br class="sp">各種SNSでお届けします。</span>
+	</div>
+	<div class="footer-sns__icon">
+		
+		
+		<a href="https://www.facebook.com/nagano.dentetsu.line/" target="_blank" rel="noopener">
+			
+			
+			
+			
+			
+			
+			<img src="https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/footer/facebook_icon.svg" alt="facebook_icon" loading="lazy" width="40" height="40" style="max-width: 100%; height: auto;">
+			
+		</a>
+		
+		
+		<a href="https://twitter.com/nagaden_info" target="_blank" rel="noopener">
+			
+			
+			
+			
+			
+			
+			<img src="https://www.nagaden-net.co.jp/hubfs/nagaden2024/img/top/footer/x_icon.svg" alt="x_icon" loading="lazy" width="38" height="39" style="max-width: 100%; height: auto;">
+			
+		</a>
+		
+		
+		<a href="https://www.instagram.com/nagano_dentetsu/" target="_blank" rel="noopener">
+			
+			
+			
+			
+			
+			
+			<img src="https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/top/footer/instagram_icon.png?width=40&amp;height=40&amp;name=instagram_icon.png" alt="instagram_icon" loading="lazy" width="40" height="40" style="max-width: 100%; height: auto;" srcset="https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/top/footer/instagram_icon.png?width=20&amp;height=20&amp;name=instagram_icon.png 20w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/top/footer/instagram_icon.png?width=40&amp;height=40&amp;name=instagram_icon.png 40w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/top/footer/instagram_icon.png?width=60&amp;height=60&amp;name=instagram_icon.png 60w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/top/footer/instagram_icon.png?width=80&amp;height=80&amp;name=instagram_icon.png 80w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/top/footer/instagram_icon.png?width=100&amp;height=100&amp;name=instagram_icon.png 100w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/top/footer/instagram_icon.png?width=120&amp;height=120&amp;name=instagram_icon.png 120w" sizes="(max-width: 40px) 100vw, 40px">
+			
+		</a>
+		
+	</div>
+</div><!-- sns -->
+
+<div class="footer-link__wrapper">
+	
+	
+	<a href="https://www.nagaden-net.co.jp/info?hsLang=ja">
+		鉄道・駅のご利用情報
+	</a>
+	
+	
+	<a href="https://www.nagaden-net.co.jp/news?hsLang=ja">
+		お知らせ
+	</a>
+	
+	
+	<a href="https://www.nagaden-net.co.jp/info/faq?hsLang=ja">
+		よくあるご質問
+	</a>
+	
+	
+	<a href="https://www.nagaden-net.co.jp/group?hsLang=ja">
+		ながでんグループ
+	</a>
+	
+	
+	<a href="https://www.nagaden-net.co.jp/company?hsLang=ja">
+		会社情報
+	</a>
+	
+	
+	<a href="https://www.nagaden-net.co.jp/inquiry?hsLang=ja">
+		お問い合わせ
+	</a>
+	
+</div>
+
+<div class="boxFooter02">
+	
+	<span id="hs_cos_wrapper_module_171524263062434_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="//www.nagaden-net.co.jp/?hsLang=ja" id="hs-link-module_171524263062434_" style="border-width:0px;border:0px;"><img src="https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/logo.png?width=416&amp;height=48&amp;name=logo.png" class="hs-image-widget " height="48" style="height: auto;width:416px;border-width:0px;border:0px;" width="416" alt="ながでんグループ" title="ながでんグループ" loading="" srcset="https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/logo.png?width=208&amp;height=24&amp;name=logo.png 208w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/logo.png?width=416&amp;height=48&amp;name=logo.png 416w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/logo.png?width=624&amp;height=72&amp;name=logo.png 624w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/logo.png?width=832&amp;height=96&amp;name=logo.png 832w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/logo.png?width=1040&amp;height=120&amp;name=logo.png 1040w, https://www.nagaden-net.co.jp/hs-fs/hubfs/nagaden2024/img/logo.png?width=1248&amp;height=144&amp;name=logo.png 1248w" sizes="(max-width: 416px) 100vw, 416px"></a></span>
+	<address>
+		<span class="name">快適生活サポート事業グループ  ながでんグループ</span>
+		<span class="address">〒380-0833 長野県長野市権堂町2201</span>
+		<span class="tel">TEL <span class="tel-link">026-232-8121</span>／FAX 026-232-8125</span>
+	</address>
+	<div class="footer-info__wrapper">
+		
+		
+		<a href="https://www.nagaden-net.co.jp/privacy?hsLang=ja" style="margin-right: 15px;" class="footer-link">個人情報の取り扱いに関する基本方針
+		</a>
+		
+		
+		<a href="https://www.nagaden-net.co.jp/sitemap?hsLang=ja" class="footer-link">サイトマップ
+		</a>
+		
+	</div>
+
+	<p class="copyright">Copyright © NAGADEN GROUP All Rights Reserved.</p>
+</div></div>
+			</footer>
+			
+			
+		</div><!-- /wrapper -->
+		
+<!-- HubSpot performance collection script -->
+<script defer src="/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166741940998/1743376264745/template_scroll.min.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166741683248/1743376262045/template_jquery.sidr.min.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166741683269/1743376262275/template_cookie.min.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166741683278/1743376262814/template_font_size.min.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166741683285/1743376263303/template_open.min.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166741683293/1743376263705/template_pagenate.min.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166741939596/1743376264191/template_jquery.heightLine.min.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/template_assets/1/166884787279/1743376266883/template_side-navi.min.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'ja';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/module_assets/1/184024443915/1743446306407/module_.min.js"></script>
+<script src="https://www.nagaden-net.co.jp/hubfs/hub_generated/module_assets/1/166884771200/1743446291809/module_header.min.js"></script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/www.nagaden-net.co.jp\/info\/timetable\/"]);
+_hsq.push(["setPageId", "167685859498"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 167685859498,
+    "legacyPageId": "167685859498",
+    "contentFolderId": null,
+    "contentGroupId": null,
+    "abTestId": null,
+    "languageVariantId": 167685859498,
+    "languageCode": "ja",
+    
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/45439183.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "9aa22025-0002-4520-88ff-39f3cf73eade",
+    ticks: 1794360079354,
+    page_id: 167685859498,
+    
+    content_group_id: 0,
+    portal_id: 45439183,
+    app_hs_base_url: "https://app-na2.hubspot.com",
+    cp_hs_base_url: "https://cp-na2.hubspot.com",
+    language: "ja",
+    analytics_page_type: "standard-page",
+    scp_content_type: "",
+    
+    analytics_page_id: "167685859498",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.640/js/index.js"></script>
+
+
+
+
+	
+</body></html>

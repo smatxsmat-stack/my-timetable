@@ -1,0 +1,3198 @@
+[
+  {
+    "route": "sansai_nagano",
+    "index": 0,
+    "original": [
+      "05:44",
+      "05:49",
+      "all"
+    ],
+    "verified": [
+      "05:40",
+      "05:49",
+      "all"
+    ],
+    "timeMatch": false,
+    "dayMatch": true,
+    "notes": [
+      "公式PDFの同一列を照合。北長野発を三才発に修正"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 1,
+    "original": [
+      "06:15",
+      "06:21",
+      "all"
+    ],
+    "verified": [
+      "06:11",
+      "06:21",
+      "all"
+    ],
+    "timeMatch": false,
+    "dayMatch": true,
+    "notes": [
+      "公式PDFの同一列を照合。北長野発を三才発に修正"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 2,
+    "original": [
+      "06:41",
+      "06:50",
+      "all"
+    ],
+    "verified": [
+      "06:41",
+      "06:50",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 3,
+    "original": [
+      "07:27",
+      "07:37",
+      "all"
+    ],
+    "verified": [
+      "07:27",
+      "07:37",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 4,
+    "original": [
+      "07:46",
+      "07:51",
+      "all"
+    ],
+    "verified": [
+      "07:42",
+      "07:51",
+      "weekday"
+    ],
+    "timeMatch": false,
+    "dayMatch": false,
+    "notes": [
+      "公式PDFの同一列を照合。北長野発を三才発に修正",
+      "公式PDFの運転日注記と不一致"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 5,
+    "original": [
+      "08:01",
+      "08:07",
+      "all"
+    ],
+    "verified": [
+      "07:56",
+      "08:07",
+      "all"
+    ],
+    "timeMatch": false,
+    "dayMatch": true,
+    "notes": [
+      "公式PDFの同一列を照合。北長野発を三才発に修正"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 6,
+    "original": [
+      "08:24",
+      "08:34",
+      "all"
+    ],
+    "verified": [
+      "08:24",
+      "08:34",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 7,
+    "original": [
+      "09:09",
+      "09:14",
+      "all"
+    ],
+    "verified": [
+      "09:05",
+      "09:14",
+      "weekday"
+    ],
+    "timeMatch": false,
+    "dayMatch": false,
+    "notes": [
+      "公式PDFの同一列を照合。北長野発を三才発に修正",
+      "公式PDFの運転日注記と不一致"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 8,
+    "original": [
+      "09:42",
+      "09:52",
+      "all"
+    ],
+    "verified": [
+      "09:42",
+      "09:52",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 9,
+    "original": [
+      "10:45",
+      "10:54",
+      "all"
+    ],
+    "verified": [
+      "10:45",
+      "10:54",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 10,
+    "original": [
+      "11:31",
+      "11:40",
+      "all"
+    ],
+    "verified": [
+      "11:31",
+      "11:40",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 11,
+    "original": [
+      "12:21",
+      "12:30",
+      "weekday"
+    ],
+    "verified": [
+      "12:21",
+      "12:30",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 12,
+    "original": [
+      "12:43",
+      "12:53",
+      "all"
+    ],
+    "verified": [
+      "12:43",
+      "12:53",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 13,
+    "original": [
+      "13:25",
+      "13:35",
+      "all"
+    ],
+    "verified": [
+      "13:25",
+      "13:35",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 14,
+    "original": [
+      "13:40",
+      "13:49",
+      "all"
+    ],
+    "verified": [
+      "13:40",
+      "13:49",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 15,
+    "original": [
+      "14:30",
+      "14:39",
+      "all"
+    ],
+    "verified": [
+      "14:30",
+      "14:39",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 16,
+    "original": [
+      "15:13",
+      "15:22",
+      "all"
+    ],
+    "verified": [
+      "15:13",
+      "15:22",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 17,
+    "original": [
+      "16:28",
+      "16:38",
+      "all"
+    ],
+    "verified": [
+      "16:28",
+      "16:38",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 18,
+    "original": [
+      "17:16",
+      "17:25",
+      "all"
+    ],
+    "verified": [
+      "17:16",
+      "17:25",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 19,
+    "original": [
+      "17:29",
+      "17:39",
+      "all"
+    ],
+    "verified": [
+      "17:29",
+      "17:39",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 20,
+    "original": [
+      "17:46",
+      "17:55",
+      "all"
+    ],
+    "verified": [
+      "17:46",
+      "17:55",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 21,
+    "original": [
+      "18:12",
+      "18:22",
+      "all"
+    ],
+    "verified": [
+      "18:12",
+      "18:22",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 22,
+    "original": [
+      "18:47",
+      "18:57",
+      "all"
+    ],
+    "verified": [
+      "18:47",
+      "18:57",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 23,
+    "original": [
+      "19:05",
+      "19:11",
+      "all"
+    ],
+    "verified": [
+      "19:00",
+      "19:11",
+      "all"
+    ],
+    "timeMatch": false,
+    "dayMatch": true,
+    "notes": [
+      "公式PDFの同一列を照合。北長野発を三才発に修正"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 24,
+    "original": [
+      "19:48",
+      "19:57",
+      "all"
+    ],
+    "verified": [
+      "19:48",
+      "19:57",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 25,
+    "original": [
+      "20:27",
+      "20:36",
+      "all"
+    ],
+    "verified": [
+      "20:27",
+      "20:36",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 26,
+    "original": [
+      "21:28",
+      "21:37",
+      "all"
+    ],
+    "verified": [
+      "21:28",
+      "21:37",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 27,
+    "original": [
+      "22:42",
+      "22:51",
+      "all"
+    ],
+    "verified": [
+      "22:42",
+      "22:51",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_nagano",
+    "index": 28,
+    "original": [
+      "23:07",
+      "23:13",
+      "all"
+    ],
+    "verified": [
+      "23:03",
+      "23:13",
+      "all"
+    ],
+    "timeMatch": false,
+    "dayMatch": true,
+    "notes": [
+      "公式PDFの同一列を照合。北長野発を三才発に修正"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 0,
+    "original": [
+      "05:10",
+      "05:20",
+      "all"
+    ],
+    "verified": [
+      "05:10",
+      "05:20",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 1,
+    "original": [
+      "05:51",
+      "06:00",
+      "all"
+    ],
+    "verified": [
+      "05:51",
+      "06:00",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 2,
+    "original": [
+      "06:00",
+      "06:09",
+      "all"
+    ],
+    "verified": [
+      "06:00",
+      "06:09",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 3,
+    "original": [
+      "06:23",
+      "06:32",
+      "all"
+    ],
+    "verified": [
+      "06:23",
+      "06:32",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 4,
+    "original": [
+      "06:58",
+      "07:07",
+      "all"
+    ],
+    "verified": [
+      "06:58",
+      "07:07",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 5,
+    "original": [
+      "07:17",
+      "07:27",
+      "all"
+    ],
+    "verified": [
+      "07:17",
+      "07:27",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": false,
+    "notes": [
+      "公式PDFの運転日注記と不一致"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 6,
+    "original": [
+      "07:45",
+      "07:56",
+      "all"
+    ],
+    "verified": [
+      "07:45",
+      "07:56",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 7,
+    "original": [
+      "07:58",
+      "08:08",
+      "all"
+    ],
+    "verified": [
+      "07:58",
+      "08:08",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": false,
+    "notes": [
+      "公式PDFの運転日注記と不一致"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 8,
+    "original": [
+      "08:14",
+      "08:23",
+      "all"
+    ],
+    "verified": [
+      "08:14",
+      "08:23",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": false,
+    "notes": [
+      "公式PDFの運転日注記と不一致"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 9,
+    "original": [
+      "08:37",
+      "08:47",
+      "all"
+    ],
+    "verified": [
+      "08:37",
+      "08:47",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 10,
+    "original": [
+      "09:23",
+      "09:33",
+      "all"
+    ],
+    "verified": [
+      "09:23",
+      "09:33",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 11,
+    "original": [
+      "10:49",
+      "10:58",
+      "weekday"
+    ],
+    "verified": [
+      "10:49",
+      "10:58",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 12,
+    "original": [
+      "11:12",
+      "11:22",
+      "all"
+    ],
+    "verified": [
+      "11:12",
+      "11:22",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 13,
+    "original": [
+      "12:11",
+      "12:20",
+      "all"
+    ],
+    "verified": [
+      "12:11",
+      "12:20",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 14,
+    "original": [
+      "12:33",
+      "12:43",
+      "all"
+    ],
+    "verified": [
+      "12:33",
+      "12:43",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 15,
+    "original": [
+      "13:15",
+      "13:25",
+      "all"
+    ],
+    "verified": [
+      "13:15",
+      "13:25",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 16,
+    "original": [
+      "14:05",
+      "14:15",
+      "all"
+    ],
+    "verified": [
+      "14:05",
+      "14:15",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 17,
+    "original": [
+      "14:11",
+      "14:20",
+      "all"
+    ],
+    "verified": [
+      "14:11",
+      "14:20",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 18,
+    "original": [
+      "15:04",
+      "15:13",
+      "all"
+    ],
+    "verified": [
+      "15:04",
+      "15:13",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 19,
+    "original": [
+      "15:28",
+      "15:37",
+      "all"
+    ],
+    "verified": [
+      "15:28",
+      "15:37",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 20,
+    "original": [
+      "15:43",
+      "15:53",
+      "all"
+    ],
+    "verified": [
+      "15:43",
+      "15:53",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 21,
+    "original": [
+      "16:08",
+      "16:18",
+      "all"
+    ],
+    "verified": [
+      "16:08",
+      "16:18",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 22,
+    "original": [
+      "17:06",
+      "17:16",
+      "all"
+    ],
+    "verified": [
+      "17:06",
+      "17:16",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 23,
+    "original": [
+      "18:11",
+      "18:20",
+      "all"
+    ],
+    "verified": [
+      "18:11",
+      "18:20",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 24,
+    "original": [
+      "18:46",
+      "18:57",
+      "all"
+    ],
+    "verified": [
+      "18:46",
+      "18:57",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 25,
+    "original": [
+      "19:50",
+      "20:00",
+      "all"
+    ],
+    "verified": [
+      "19:50",
+      "20:00",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 26,
+    "original": [
+      "21:18",
+      "21:28",
+      "all"
+    ],
+    "verified": [
+      "21:18",
+      "21:28",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "nagano_sansai",
+    "index": 27,
+    "original": [
+      "22:05",
+      "22:14",
+      "all"
+    ],
+    "verified": [
+      "22:05",
+      "22:14",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 0,
+    "original": [
+      "05:36",
+      "05:46",
+      "all"
+    ],
+    "verified": [
+      "05:36",
+      "05:46",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 1,
+    "original": [
+      "06:00",
+      "06:10",
+      "all"
+    ],
+    "verified": [
+      "06:00",
+      "06:10",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 2,
+    "original": [
+      "06:27",
+      "06:37",
+      "all"
+    ],
+    "verified": [
+      "06:27",
+      "06:37",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 3,
+    "original": [
+      "06:53",
+      "07:04",
+      "all"
+    ],
+    "verified": [
+      "06:53",
+      "07:04",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 4,
+    "original": [
+      "07:18",
+      "07:30",
+      "all"
+    ],
+    "verified": [
+      "07:18",
+      "07:30",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 5,
+    "original": [
+      "07:36",
+      "07:47",
+      "weekday"
+    ],
+    "verified": [
+      "07:36",
+      "07:47",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 6,
+    "original": [
+      "07:49",
+      "08:01",
+      "all"
+    ],
+    "verified": [
+      "07:49",
+      "08:01",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 7,
+    "original": [
+      "07:59",
+      "08:08",
+      "all"
+    ],
+    "verified": [
+      "07:59",
+      "08:08",
+      "all",
+      "B特急"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [
+      "B特急の表示を補完"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 8,
+    "original": [
+      "08:15",
+      "08:26",
+      "all"
+    ],
+    "verified": [
+      "08:15",
+      "08:26",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 9,
+    "original": [
+      "08:29",
+      "08:41",
+      "weekday"
+    ],
+    "verified": [
+      "08:29",
+      "08:41",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 10,
+    "original": [
+      "08:41",
+      "08:50",
+      "all"
+    ],
+    "verified": [
+      "08:41",
+      "08:50",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 11,
+    "original": [
+      "09:09",
+      "09:19",
+      "all"
+    ],
+    "verified": [
+      "09:09",
+      "09:19",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 12,
+    "original": [
+      "09:34",
+      "09:44",
+      "all"
+    ],
+    "verified": [
+      "09:34",
+      "09:44",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 13,
+    "original": [
+      "09:55",
+      "10:05",
+      "all"
+    ],
+    "verified": [
+      "09:55",
+      "10:05",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 14,
+    "original": [
+      "10:21",
+      "10:31",
+      "all"
+    ],
+    "verified": [
+      "10:21",
+      "10:31",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 15,
+    "original": [
+      "10:53",
+      "11:03",
+      "all"
+    ],
+    "verified": [
+      "10:53",
+      "11:03",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 16,
+    "original": [
+      "11:18",
+      "11:28",
+      "all"
+    ],
+    "verified": [
+      "11:18",
+      "11:28",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 17,
+    "original": [
+      "12:00",
+      "12:10",
+      "all"
+    ],
+    "verified": [
+      "12:00",
+      "12:10",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 18,
+    "original": [
+      "12:33",
+      "12:42",
+      "all"
+    ],
+    "verified": [
+      "12:33",
+      "12:42",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 19,
+    "original": [
+      "12:58",
+      "13:07",
+      "all"
+    ],
+    "verified": [
+      "12:58",
+      "13:07",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 20,
+    "original": [
+      "13:44",
+      "13:54",
+      "all"
+    ],
+    "verified": [
+      "13:44",
+      "13:54",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 21,
+    "original": [
+      "14:16",
+      "14:26",
+      "all"
+    ],
+    "verified": [
+      "14:16",
+      "14:26",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 22,
+    "original": [
+      "14:46",
+      "14:56",
+      "all"
+    ],
+    "verified": [
+      "14:46",
+      "14:56",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 23,
+    "original": [
+      "15:22",
+      "15:32",
+      "all"
+    ],
+    "verified": [
+      "15:22",
+      "15:32",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 24,
+    "original": [
+      "16:01",
+      "16:11",
+      "all"
+    ],
+    "verified": [
+      "16:01",
+      "16:11",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 25,
+    "original": [
+      "16:23",
+      "16:33",
+      "all"
+    ],
+    "verified": [
+      "16:23",
+      "16:33",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 26,
+    "original": [
+      "16:51",
+      "17:00",
+      "all"
+    ],
+    "verified": [
+      "16:51",
+      "17:00",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 27,
+    "original": [
+      "17:17",
+      "17:26",
+      "all"
+    ],
+    "verified": [
+      "17:17",
+      "17:26",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 28,
+    "original": [
+      "17:55",
+      "18:04",
+      "all"
+    ],
+    "verified": [
+      "17:55",
+      "18:04",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 29,
+    "original": [
+      "18:23",
+      "18:33",
+      "all"
+    ],
+    "verified": [
+      "18:23",
+      "18:33",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 30,
+    "original": [
+      "18:31",
+      "18:40",
+      "all"
+    ],
+    "verified": [
+      "18:31",
+      "18:40",
+      "all",
+      "B特急"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [
+      "B特急の表示を補完"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 31,
+    "original": [
+      "18:47",
+      "18:57",
+      "all"
+    ],
+    "verified": [
+      "18:47",
+      "18:57",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 32,
+    "original": [
+      "19:13",
+      "19:22",
+      "all"
+    ],
+    "verified": [
+      "19:13",
+      "19:22",
+      "all",
+      "B特急"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [
+      "B特急の表示を補完"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 33,
+    "original": [
+      "19:44",
+      "19:53",
+      "all"
+    ],
+    "verified": [
+      "19:44",
+      "19:53",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 34,
+    "original": [
+      "20:12",
+      "20:21",
+      "all"
+    ],
+    "verified": [
+      "20:12",
+      "20:21",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 35,
+    "original": [
+      "21:03",
+      "21:12",
+      "all"
+    ],
+    "verified": [
+      "21:03",
+      "21:12",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 36,
+    "original": [
+      "21:16",
+      "21:24",
+      "all"
+    ],
+    "verified": [
+      "21:16",
+      "21:24",
+      "all",
+      "B特急"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [
+      "B特急の表示を補完"
+    ],
+    "result": "corrected"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 37,
+    "original": [
+      "21:33",
+      "21:43",
+      "all"
+    ],
+    "verified": [
+      "21:33",
+      "21:43",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "asahi_gondo",
+    "index": 38,
+    "original": [
+      "22:17",
+      "22:27",
+      "all"
+    ],
+    "verified": [
+      "22:17",
+      "22:27",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 0,
+    "original": [
+      "06:18",
+      "06:28",
+      "all"
+    ],
+    "verified": [
+      "06:18",
+      "06:28",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 1,
+    "original": [
+      "06:44",
+      "06:54",
+      "all"
+    ],
+    "verified": [
+      "06:44",
+      "06:54",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 2,
+    "original": [
+      "07:08",
+      "07:18",
+      "all"
+    ],
+    "verified": [
+      "07:08",
+      "07:18",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 3,
+    "original": [
+      "07:30",
+      "07:40",
+      "all"
+    ],
+    "verified": [
+      "07:30",
+      "07:40",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 4,
+    "original": [
+      "07:49",
+      "07:59",
+      "weekday"
+    ],
+    "verified": [
+      "07:49",
+      "07:59",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 5,
+    "original": [
+      "08:04",
+      "08:15",
+      "all"
+    ],
+    "verified": [
+      "08:04",
+      "08:15",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 6,
+    "original": [
+      "08:33",
+      "08:43",
+      "all"
+    ],
+    "verified": [
+      "08:33",
+      "08:43",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 7,
+    "original": [
+      "08:45",
+      "08:55",
+      "all"
+    ],
+    "verified": [
+      "08:45",
+      "08:55",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 8,
+    "original": [
+      "09:16",
+      "09:27",
+      "all"
+    ],
+    "verified": [
+      "09:16",
+      "09:27",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 9,
+    "original": [
+      "09:38",
+      "09:48",
+      "weekday"
+    ],
+    "verified": [
+      "09:38",
+      "09:48",
+      "weekday"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 10,
+    "original": [
+      "10:03",
+      "10:13",
+      "all"
+    ],
+    "verified": [
+      "10:03",
+      "10:13",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 11,
+    "original": [
+      "10:29",
+      "10:39",
+      "all"
+    ],
+    "verified": [
+      "10:29",
+      "10:39",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 12,
+    "original": [
+      "10:54",
+      "11:04",
+      "all"
+    ],
+    "verified": [
+      "10:54",
+      "11:04",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 13,
+    "original": [
+      "11:19",
+      "11:29",
+      "all"
+    ],
+    "verified": [
+      "11:19",
+      "11:29",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 14,
+    "original": [
+      "11:51",
+      "12:02",
+      "all"
+    ],
+    "verified": [
+      "11:51",
+      "12:02",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 15,
+    "original": [
+      "12:22",
+      "12:33",
+      "all"
+    ],
+    "verified": [
+      "12:22",
+      "12:33",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 16,
+    "original": [
+      "13:00",
+      "13:10",
+      "all"
+    ],
+    "verified": [
+      "13:00",
+      "13:10",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 17,
+    "original": [
+      "13:33",
+      "13:44",
+      "all"
+    ],
+    "verified": [
+      "13:33",
+      "13:44",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 18,
+    "original": [
+      "13:59",
+      "14:09",
+      "all"
+    ],
+    "verified": [
+      "13:59",
+      "14:09",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 19,
+    "original": [
+      "14:44",
+      "14:54",
+      "all"
+    ],
+    "verified": [
+      "14:44",
+      "14:54",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 20,
+    "original": [
+      "15:12",
+      "15:22",
+      "all"
+    ],
+    "verified": [
+      "15:12",
+      "15:22",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 21,
+    "original": [
+      "15:44",
+      "15:54",
+      "all"
+    ],
+    "verified": [
+      "15:44",
+      "15:54",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 22,
+    "original": [
+      "16:15",
+      "16:25",
+      "all"
+    ],
+    "verified": [
+      "16:15",
+      "16:25",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 23,
+    "original": [
+      "16:51",
+      "17:01",
+      "all"
+    ],
+    "verified": [
+      "16:51",
+      "17:01",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 24,
+    "original": [
+      "17:17",
+      "17:27",
+      "all"
+    ],
+    "verified": [
+      "17:17",
+      "17:27",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 25,
+    "original": [
+      "17:43",
+      "17:54",
+      "all"
+    ],
+    "verified": [
+      "17:43",
+      "17:54",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 26,
+    "original": [
+      "18:03",
+      "18:12",
+      "all",
+      "B特急"
+    ],
+    "verified": [
+      "18:03",
+      "18:12",
+      "all",
+      "B特急"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 27,
+    "original": [
+      "18:06",
+      "18:16",
+      "all"
+    ],
+    "verified": [
+      "18:06",
+      "18:16",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 28,
+    "original": [
+      "18:23",
+      "18:33",
+      "all"
+    ],
+    "verified": [
+      "18:23",
+      "18:33",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 29,
+    "original": [
+      "18:53",
+      "19:03",
+      "all"
+    ],
+    "verified": [
+      "18:53",
+      "19:03",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 30,
+    "original": [
+      "19:24",
+      "19:34",
+      "all"
+    ],
+    "verified": [
+      "19:24",
+      "19:34",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 31,
+    "original": [
+      "19:43",
+      "19:52",
+      "all",
+      "B特急"
+    ],
+    "verified": [
+      "19:43",
+      "19:52",
+      "all",
+      "B特急"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 32,
+    "original": [
+      "20:01",
+      "20:12",
+      "all"
+    ],
+    "verified": [
+      "20:01",
+      "20:12",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 33,
+    "original": [
+      "20:23",
+      "20:33",
+      "all"
+    ],
+    "verified": [
+      "20:23",
+      "20:33",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 34,
+    "original": [
+      "20:43",
+      "20:53",
+      "all"
+    ],
+    "verified": [
+      "20:43",
+      "20:53",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 35,
+    "original": [
+      "21:29",
+      "21:39",
+      "all"
+    ],
+    "verified": [
+      "21:29",
+      "21:39",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 36,
+    "original": [
+      "21:59",
+      "22:09",
+      "all"
+    ],
+    "verified": [
+      "21:59",
+      "22:09",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 37,
+    "original": [
+      "22:17",
+      "22:26",
+      "all",
+      "B特急"
+    ],
+    "verified": [
+      "22:17",
+      "22:26",
+      "all",
+      "B特急"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_asahi",
+    "index": 38,
+    "original": [
+      "22:52",
+      "23:02",
+      "all"
+    ],
+    "verified": [
+      "22:52",
+      "23:02",
+      "all"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 0,
+    "original": [
+      "09:47",
+      "10:15",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "09:47",
+      "10:15",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 1,
+    "original": [
+      "10:15",
+      "10:43",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "10:15",
+      "10:43",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 2,
+    "original": [
+      "14:59",
+      "15:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "14:59",
+      "15:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 3,
+    "original": [
+      "15:59",
+      "16:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "15:59",
+      "16:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 4,
+    "original": [
+      "16:59",
+      "17:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "16:59",
+      "17:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 5,
+    "original": [
+      "17:59",
+      "18:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "17:59",
+      "18:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 6,
+    "original": [
+      "18:59",
+      "19:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "18:59",
+      "19:27",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 7,
+    "original": [
+      "06:35",
+      "07:02",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "06:35",
+      "07:02",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 8,
+    "original": [
+      "07:03",
+      "07:32",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "07:03",
+      "07:32",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 9,
+    "original": [
+      "07:33",
+      "08:02",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "07:33",
+      "08:02",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 10,
+    "original": [
+      "09:00",
+      "09:27",
+      "weekday",
+      "64",
+      "三才駅前"
+    ],
+    "verified": [
+      "09:00",
+      "09:27",
+      "weekday",
+      "64",
+      "三才駅前"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 11,
+    "original": [
+      "13:37",
+      "14:03",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "13:37",
+      "14:03",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 12,
+    "original": [
+      "15:34",
+      "16:00",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "15:34",
+      "16:00",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 13,
+    "original": [
+      "13:26",
+      "13:54",
+      "holiday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "13:26",
+      "13:54",
+      "weekend",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 14,
+    "original": [
+      "16:51",
+      "17:19",
+      "saturday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "16:51",
+      "17:19",
+      "saturday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 15,
+    "original": [
+      "13:49",
+      "14:15",
+      "holiday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "13:49",
+      "14:15",
+      "weekend",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "sansai_gondo_bus",
+    "index": 16,
+    "original": [
+      "16:41",
+      "17:07",
+      "holiday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "16:41",
+      "17:07",
+      "weekend",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 0,
+    "original": [
+      "07:48",
+      "08:14",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "07:48",
+      "08:14",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 1,
+    "original": [
+      "08:18",
+      "08:45",
+      "weekday",
+      "63",
+      "三才駅前"
+    ],
+    "verified": [
+      "08:18",
+      "08:45",
+      "weekday",
+      "63",
+      "三才駅前"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 2,
+    "original": [
+      "09:23",
+      "09:49",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "09:23",
+      "09:49",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 3,
+    "original": [
+      "11:28",
+      "11:54",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "11:28",
+      "11:54",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 4,
+    "original": [
+      "12:28",
+      "12:54",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "12:28",
+      "12:54",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 5,
+    "original": [
+      "13:28",
+      "13:54",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "13:28",
+      "13:54",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 6,
+    "original": [
+      "15:28",
+      "15:54",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "15:28",
+      "15:54",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 7,
+    "original": [
+      "18:33",
+      "18:58",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "18:33",
+      "18:58",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 8,
+    "original": [
+      "20:08",
+      "20:33",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "20:08",
+      "20:33",
+      "weekday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 9,
+    "original": [
+      "09:53",
+      "10:13",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "09:53",
+      "10:13",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 10,
+    "original": [
+      "10:28",
+      "10:48",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "10:28",
+      "10:48",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 11,
+    "original": [
+      "16:53",
+      "17:14",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "16:53",
+      "17:14",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 12,
+    "original": [
+      "18:48",
+      "19:09",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "18:48",
+      "19:09",
+      "weekday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 13,
+    "original": [
+      "11:58",
+      "12:24",
+      "holiday",
+      "63",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "11:58",
+      "12:24",
+      "weekend",
+      "63",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 14,
+    "original": [
+      "09:33",
+      "09:53",
+      "holiday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "09:33",
+      "09:53",
+      "weekend",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  },
+  {
+    "route": "gondo_sansai_bus",
+    "index": 15,
+    "original": [
+      "13:18",
+      "13:38",
+      "holiday",
+      "64",
+      "三才駅(県道)"
+    ],
+    "verified": [
+      "13:18",
+      "13:38",
+      "weekend",
+      "64",
+      "三才駅(県道)"
+    ],
+    "timeMatch": true,
+    "dayMatch": true,
+    "notes": [],
+    "result": "matched"
+  }
+]

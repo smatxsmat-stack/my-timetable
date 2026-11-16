@@ -1,0 +1,105 @@
+name: Verify timetables and deploy
+on:
+  schedule:
+    - cron: '15 0 * * *' # 09:15 JST (GitHub schedules may be delayed)
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+concurrency:
+  group: timetable-production
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install PDF comparison dependency
+        run: python -m pip install -r requirements.txt
+      - name: Test fail-closed update logic and calendars
+        run: |
+          python -m unittest discover -s tests -v
+          node --test tests/core.test.cjs
+      - name: Fetch official sources and validate changes
+        id: monitor
+        continue-on-error: true
+        run: python tools/check_updates.py
+      - name: Restore last good data after unexpected failure
+        if: steps.monitor.outcome != 'success'
+        run: |
+          git restore --source=HEAD -- data.json holidays.json source-state.json monitor-status.json evidence/ dist/
+          python - <<'PYCODE'
+          import json
+          from pathlib import Path
+          p=Path('monitor-status.json')
+          d=json.loads(p.read_text())
+          d['alerts']=[{'source':'monitor','reason':'監視処理が異常終了したため、最後に保存されたデータへ戻しました。Actionsログを確認してください。'}]
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2))
+          PYCODE
+      - name: Build coherent offline application
+        run: python build.py
+      - name: Preserve comparison and source evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: timetable-comparison-${{ github.run_id }}
+          path: |
+            reports/
+            monitor-status.json
+          retention-days: 90
+      - name: Notify review required or monitor failure
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          MONITOR_OUTCOME: ${{ steps.monitor.outcome }}
+        with:
+          script: |
+            const fs = require('fs');
+            const state = JSON.parse(fs.readFileSync('monitor-status.json', 'utf8'));
+            const failed = process.env.MONITOR_OUTCOME !== 'success';
+            const title = '時刻表の変更確認が必要です';
+            const run = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            if (failed || state.alerts.length) {
+              const body = `公式資料の変更または取得・検証エラーがありました。検証できない路線の既存時刻は維持しています。\n\n${state.alerts.map(x=>`- ${x.source}: ${x.reason}`).join('\n')}\n\n監視処理: ${failed?'失敗':'完了'}\n比較資料・ログ: ${run}\n\n鉄道はPDF全列・運転日注記を再検証し、evidence/approved-rail.json と source-state.json を更新してください。`;
+              const issues = await github.paginate(github.rest.issues.listForRepo,{...context.repo,state:'open',creator:'github-actions[bot]',per_page:100});
+              const existing = issues.find(x=>!x.pull_request && x.title===title);
+              if(existing) await github.rest.issues.update({...context.repo,issue_number:existing.number,body});
+              else await github.rest.issues.create({...context.repo,title,body});
+            }
+      - name: Commit validated data and verification status
+        if: steps.monitor.outcome == 'success'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data.json holidays.json source-state.json monitor-status.json evidence/ dist/
+          if ! git diff --cached --quiet; then
+            git commit -m 'Verify official timetables and publish validated data'
+            git push origin HEAD:main
+          fi
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Fail run on unexpected monitor exception
+        if: steps.monitor.outcome != 'success'
+        run: exit 1
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
