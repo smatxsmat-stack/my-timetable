@@ -1,0 +1,8 @@
+const test=require('node:test'),assert=require('node:assert/strict'),notify=require('../tools/notify.cjs');
+const context={repo:{owner:'example',repo:'test'},serverUrl:'https://github.com',runId:1};
+function mock(existing=[]){const calls=[];const issues={listForRepo(){},async create(p){calls.push(['create',p])},async createComment(p){calls.push(['comment',p])},async update(p){calls.push(['update',p])}};return {calls,github:{rest:{issues},paginate:async()=>existing}}}
+const state={alerts:[],changedSources:[],updatedRoutes:[]};
+test('no change sends no notification',async()=>{const m=mock();await notify({github:m.github,context,state});assert.equal(m.calls.length,0)});
+test('validated change creates notification issue',async()=>{const m=mock();await notify({github:m.github,context,state:{...state,changedSources:['bus63'],updatedRoutes:['sansai_gondo_bus']}});assert.equal(m.calls[0][0],'create');assert.match(m.calls[0][1].title,/自動更新/)});
+test('same unresolved condition is quiet; changed condition sends a comment',async()=>{const m=mock(),s={...state,alerts:[{source:'bus',reason:'unknown'}]};await notify({github:m.github,context,state:s});const created=m.calls[0][1],n=mock([{...created,number:1}]);await notify({github:n.github,context,state:s});assert.equal(n.calls.length,0);await notify({github:n.github,context,state:{...s,alerts:[{source:'bus',reason:'new condition'}]}});assert.equal(n.calls[0][0],'comment')});
+test('notification test is clearly labelled',async()=>{const m=mock();await notify({github:m.github,context,state,test:true});assert.match(m.calls[0][1].title,/動作確認/);assert.match(m.calls[0][1].body,/実際の時刻変更ではありません/)});

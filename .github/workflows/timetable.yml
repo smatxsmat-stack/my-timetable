@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '15 0 * * *' # 09:15 JST (GitHub schedules may be delayed)
   workflow_dispatch:
+    inputs:
+      notification_test:
+        description: Create an explicitly labelled Issue notification test (no timetable changes)
+        type: boolean
+        default: false
   push:
     branches: [main]
 permissions:
@@ -31,7 +36,7 @@ jobs:
       - name: Test fail-closed update logic and calendars
         run: |
           python -m unittest discover -s tests -v
-          node --test tests/core.test.cjs
+          node --test tests/*.test.cjs
       - name: Fetch official sources and validate changes
         id: monitor
         continue-on-error: true
@@ -64,20 +69,14 @@ jobs:
         uses: actions/github-script@v7
         env:
           MONITOR_OUTCOME: ${{ steps.monitor.outcome }}
+          NOTIFICATION_TEST: ${{ inputs.notification_test }}
         with:
           script: |
             const fs = require('fs');
+            const notify = require('./tools/notify.cjs');
             const state = JSON.parse(fs.readFileSync('monitor-status.json', 'utf8'));
-            const failed = process.env.MONITOR_OUTCOME !== 'success';
-            const title = '時刻表の変更確認が必要です';
-            const run = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            if (failed || state.alerts.length) {
-              const body = `公式資料の変更または取得・検証エラーがありました。検証できない路線の既存時刻は維持しています。\n\n${state.alerts.map(x=>`- ${x.source}: ${x.reason}`).join('\n')}\n\n監視処理: ${failed?'失敗':'完了'}\n比較資料・ログ: ${run}\n\n鉄道はPDF全列・運転日注記を再検証し、evidence/approved-rail.json と source-state.json を更新してください。`;
-              const issues = await github.paginate(github.rest.issues.listForRepo,{...context.repo,state:'open',creator:'github-actions[bot]',per_page:100});
-              const existing = issues.find(x=>!x.pull_request && x.title===title);
-              if(existing) await github.rest.issues.update({...context.repo,issue_number:existing.number,body});
-              else await github.rest.issues.create({...context.repo,title,body});
-            }
+            const comparison = fs.existsSync('reports/comparison.json') ? JSON.parse(fs.readFileSync('reports/comparison.json','utf8')) : {};
+            await notify({github,context,state,comparison,outcome:process.env.MONITOR_OUTCOME,test:process.env.NOTIFICATION_TEST==='true'});
       - name: Commit validated data and verification status
         if: steps.monitor.outcome == 'success'
         run: |

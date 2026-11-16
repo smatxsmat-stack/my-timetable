@@ -1,5 +1,11 @@
 # マイ時刻表 v1.0
 
+公開アプリ: https://smatxsmat-stack.github.io/my-timetable/
+
+専用リポジトリ: https://github.com/smatxsmat-stack/my-timetable
+
+GitHub Actions初回監視・テスト・公開成功（2026-11-17）。毎日09:15 JST。
+
 Galaxy A36向けの静的PWA。出発地をタップし、日本時間の現在時刻以降の登録便を路線横断で発車順に表示します。前回の出発地は端末に保存。行き／帰り、指定日時、手動曜日、端末への追加便も利用できます。
 
 ## 使う
@@ -29,7 +35,7 @@ Galaxy A36向けの静的PWA。出発地をタップし、日本時間の現在�
 4. Actions → Verify timetables and deploy → Run workflow を実行。
 5. 成功したDeployのURLをGalaxyに登録。Issue通知はGitHubリポジトリをWatchし、GitHubの通知設定で受け取ります。
 
-毎日09:15 JSTに監視予定です。GitHub側の遅延やスケジュール停止はあり得るため、最終確認日も確認してください。専用リポジトリは https://github.com/smatxsmat-stack/my-timetable です。CITY PULSEとは独立しています。GitHub Actionsの初回成功とPagesの公開URLを確認してから運用を開始してください。
+毎日09:15 JSTに監視予定です。GitHub側の遅延やスケジュール停止はあり得るため、最終確認日も確認してください。専用リポジトリは https://github.com/smatxsmat-stack/my-timetable です。CITY PULSEとは独立しています。GitHub Actionsの初回成功とPagesの公開を確認済みです。
 
 参考：[GitHub公式のPagesワークフロー](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、[PWAのインストール条件](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable)。
 
@@ -52,7 +58,7 @@ Python 3.9以上（CIは3.12）、Node.js 22。画面は依存ライブラリな
 ```sh
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
-node --test tests/core.test.cjs
+node --test tests/*.test.cjs
 python build.py
 python -m http.server 8765 --directory dist
 ```
@@ -70,3 +76,7 @@ python -m http.server 8765 --directory dist
 - [内閣府の祝日](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)
 
 `source-state.json` に取得元URLとSHA-256、`evidence/` に照合時の資料を保存しています。
+
+## Issue通知
+
+未検証の変更や取得失敗だけでなく、検証を通過した自動更新もIssueで通知します。同一の未解決状態では再通知せず、資料のハッシュやエラー内容が変わったときだけコメントで通知します。手動実行の notification_test をオンにすると、時刻を変更せず通知の動作確認ができます。
