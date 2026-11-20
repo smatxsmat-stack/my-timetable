@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta name="Description" content="路線バスが運行している全エリアの運賃表を確認できます。地図からバス停を探す、バス停名からバス停を探すことも可能。区間ごとの運賃表もご覧いただけます。">
+
+<title>運賃表 | 路線バス | 長電バス株式会社</title>
+  <link rel="stylesheet" href="/common/css/reset.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/common/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/common/css/custom.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/common/css/custom_w960.css" type="text/css" media="screen and (max-width:960px)"/>
+<link rel="stylesheet" href="/common/css/w960.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="/common/js/scroll.js"></script>
+<script type="text/javascript" src="/common/js/pageTop.js"></script>
+<script type="text/javascript" src="/common/js/open.js"></script>
+<script type="text/javascript" src="/common/js/change.js"></script>
+<link rel="stylesheet" href="/common/css/jquery.bxslider.css" type="text/css" media="all" />
+<script type="text/javascript" src="/common/js/spmenu.js"></script>
+<script src="/common/js/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function(){
+$('.bxslider').bxSlider({
+pagerCustom: '#bx-pager',
+auto: true,
+autoControls: true,
+});
+
+});
+</script>
+<script type="text/javascript" src="/common/js/jquery.sidr.min.js"></script>
+<script src="http://transer.com/atasp/pagetrans2/crosslanguage-translate.php?clientid=aaf" type="text/javascript"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18572352-57', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body class="local fare">
+
+
+  <header>
+  <div class="wrapper">
+    <div class="headerTop clearfix">
+      <div class="left">
+        <a  class="logo" href="/"><h1><img src="/common/image/base/logo.svg" alt="長電バス(株)" width="100%"></h1></a>
+      </div>
+      <a id="sp-menu" href="#sidr">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <p>メニュー</p>
+      </a>
+      <div class="sidr sidrRight right" id="sidr">
+        <nav>
+          <ul class="clearfix">
+            <li class="top"><a href="/">ホーム</a></li>
+            <li class="highway"><a href="/highway/"><span>高速バス</span></a></li>
+            <li class="express"><a href="/express/"><span>急行バス</span></a></li>
+            <li class="local"><a href="/local/"><span>路線バス</span></a></li>
+            <li class="sightseeing"><a href="/sightseeing/"><span>貸切バス</span></a></li>
+            <li class="maintenance"><a href="/maintenance/"><span>整備事業所</span></a></li>
+            <li class="news"><a href="/news/">ニュースリリース</a></li>
+            <li class="operation_information"><a href="/operation_information/">運行情報</a></li>
+            <li class="contact"><a href="/contact/">お問い合わせ</a></li>
+            <li class="about"><a href="/about/">会社情報</a></li>
+            <li class="recruit"><a href="/recruit/">採用情報</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <div class="crosslanguage">
+          <ul class="clearfix">
+            <li><a class="crosslanguage-translate-org" href="#">日本語</a></li>
+            <li><a href="http://www.nagadenbus.co.jp.e.aaf.hp.transer.com/">ENGLISH</a></li>
+            <li><a href="http://www.nagadenbus.co.jp.k.aaf.hp.transer.com/">한국</a></li>
+            <li><a href="http://www.nagadenbus.co.jp.t.aaf.hp.transer.com/">繁体</a></li>
+            <li><a href="http://www.nagadenbus.co.jp.c.aaf.hp.transer.com/">簡体</a></li>
+          </ul>
+        </div>
+        <!--多言語公開時にmargin-top:30pxを消す-->
+        <div class="subNavi" style="margin-top:30px;">
+          <nav>
+            <ul class="clearfix">
+              <li class="top"><a href="/">ホーム</a></li>
+              <li class="news"><a href="/news/">ニュースリリース</a></li>
+              <li class="operation_information"><a href="/operation_information/">運行情報</a></li>
+              <li class="contact"><a href="/contact/">お問い合わせ</a></li>
+              <li class="about"><a href="/about/">会社情報</a></li>
+              <li class="recruit"><a href="/recruit/">採用情報</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="headerBottom">
+      <div class="globalNavi">
+        <nav>
+          <ul class="clearfix">
+            <li class="highway"><a href="/highway/"><span>高速バス</span></a></li>
+            <li class="express"><a href="/express/"><span>急行バス</span></a></li>
+            <li class="local"><a href="/local/"><span>路線バス</span></a></li>
+            <li class="sightseeing"><a href="/sightseeing/"><span>貸切バス</span></a></li>
+            <li class="maintenance"><a href="/maintenance/"><span>整備事業所</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="outside"><a href="http://www.nagaden-net.co.jp/" target="_blank"><span>長野電鉄サイト</span></a></div>
+  </div>
+
+</header>
+  <div class="wrapper clearfix">
+    <article>
+      <section>
+        <h1><span>路線バス 運賃表</span></h1>
+        <section>
+          <h2><span>路線一覧</span></h2>
+          <div class="anchorLink">
+            <ul>
+              <li><a href="#area01">長野エリア</a></li>
+              <li><a href="#area02">須坂・高山・小布施エリア</a></li>
+              <li><a href="#area03">湯田中・中野・志賀高原エリア</a></li>
+              <li><a href="#area04">飯山・木島平・野沢温泉エリア</a></li>
+              <li><a href="#area05">飯綱・信濃町エリア</a></li>
+            </ul>
+          </div>
+        <section>
+  <h3 id="area01"><span>長野エリア</span></h3>
+  <div class="routeList">
+	<ul>
+	  <li>
+		<a href="../fare/route.php?route=NGN09">
+		  <p>
+			<span>51</span>
+			<span>平林線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～権堂～平林～北尾張部～市民病院～柳原</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN07">
+		  <p>
+			<span>52</span>
+			<span>運動公園線</span>
+			<span>[2025年9月26日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～権堂～三輪～運動公園</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN03-1">
+		  <p>
+			<span>61</span>
+			<span>浅川西条線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～権堂～宇木～若槻団地中央～浅川西条</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN01">
+		  <p>
+			<span>62</span>
+			<span>東長野病院線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～宇木～稲田～東長野病院</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN02-1">
+		  <p>
+			<span>63</span>
+			<span>三才線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～権堂～宇木～三才駅～柳原</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN04">
+		  <p>
+			<span>64</span>
+			<span>マユミダ・三才線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～権堂～檀田～三才駅～柳原</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN15">
+		  <p>
+			<span>81</span>
+			<span>日赤線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅東口～日赤～水野美術館～アークス中央・ビッグハット</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN08-1">
+		  <p>
+			<span>82</span>
+			<span>須坂屋島線</span>
+			<span>[2025年9月26日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">※
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～高田～エムウェーブ～イオンモール須坂～須坂駅</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN08-2">
+		  <p>
+			<span>82B</span>
+			<span>綿内屋島線</span>
+			<span>[2025年9月26日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～高田～エムウェーブ～イオンモール須坂～綿内駅</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN46">
+		  <p>
+			<span>46</span>
+			<span>大豆島川田線</span>
+			<span>[2025年11月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅～市役所前～南俣～大豆島東団地～川田駅</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN03-2">
+		  <p>
+			<span>161</span>
+			<span>浅川西条市民病院線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>浅川西条～若槻団地～稲田北～三才駅～市民病院～柳原</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN02-2">
+		  <p>
+			<span>162</span>
+			<span>三才東長野病院線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>東長野病院&rarr;三才駅&rarr;柳原</p>
+		</a>
+	  </li>  
+	  <li>
+		<a href="/local/suzakayashiro/">
+		  <p>
+			<span>R</span>
+			<span>屋代須坂線</span>
+			<span>[2025年9月26日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">※
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>屋代駅～松代駅～若穂病院～イオンモール須坂～須坂駅</p>
+		</a>
+	  </li>
+	  <li class="another">
+		<a href="/community/2021/09/gururin.php">
+		  <p>
+			<span>長野市循環バス「ぐるりん号」</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>長野駅&rarr;善光寺大門&rarr;県庁前&rarr;長野駅</p>
+		</a>
+	  </li>
+	  <li class="another">
+		<a href="/community/2021/09/touhoku-gururin.php">
+		  <p>
+			<span>長野市循環バス「東北ぐるりん号」</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+		  <p>市民病院&rarr;古里支所&rarr;北長野駅&rarr;朝陽駅&rarr;市民病院</p>
+		</a>
+	  </li>
+	</ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="area02"><span>須坂・高山・小布施エリア</span></h3>
+  <div class="routeList">
+	<ul>
+	  <li>
+		<a href="../fare/route.php?route=SZK01">
+		  <p>
+			<span>T</span>
+			<span>山田温泉線</span>
+			<span>[2025年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/f75839c2d11de6d4d919351697739e05327aa393.png" alt="須坂あしあとランプ" width="60px" height="30px">
+		  <p>須坂駅～荒井原～役場前（～牧車庫・山田温泉）</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=SZK02">
+		  <p>
+			<span>S</span>
+			<span>仙仁線</span>
+			<span>[2025年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/f75839c2d11de6d4d919351697739e05327aa393.png" alt="須坂あしあとランプ" width="60px" height="30px">
+		  <p>須坂駅～臥竜公園～湯っ蔵んど～仙仁</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=SZK03">
+		  <p>
+			<span>Y</span>
+			<span>米子線</span>
+			<span>[2025年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/f75839c2d11de6d4d919351697739e05327aa393.png" alt="須坂あしあとランプ" width="60px" height="30px">
+		  <p>須坂駅～臥竜公園～その里ホール・米子不動尊</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=SZK04">
+		  <p>
+			<span>K</span>
+			<span>北相之島線</span>
+			<span>[2025年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/f75839c2d11de6d4d919351697739e05327aa393.png" alt="須坂あしあとランプ" width="60px" height="30px">
+		  <p>須坂駅～北須坂駅～豊島町～北相之島町</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=SZK05">
+		  <p>
+			<span>M</span>
+			<span>明徳団地線</span>
+			<span>[2025年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/f75839c2d11de6d4d919351697739e05327aa393.png" alt="須坂あしあとランプ" width="60px" height="30px">
+		  <p>須坂駅～臥竜公園～下八町～明徳町公会堂</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="/local/suzakayashiro/">
+		  <p>
+			<span>R</span>
+			<span>屋代須坂線</span>
+			<span>[2025年9月26日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/f75839c2d11de6d4d919351697739e05327aa393.png" alt="須坂あしあとランプ" width="60px" height="30px">
+		  <p>須坂駅～イオンモール須坂～若穂病院～松代駅～屋代駅</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NGN08-1">
+		  <p>
+			<span>82</span>
+			<span>須坂屋島線</span>
+			<span>[2025年9月26日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/f75839c2d11de6d4d919351697739e05327aa393.png" alt="須坂あしあとランプ" width="60px" height="30px">
+		  <p>須坂駅～イオンモール須坂～エムウェーブ～高田～長野駅東口～長野駅</p>
+		</a>
+	  </li>
+	  <li class="another">
+		<a href="/community/2021/09/obuse-roman.php">
+		  <p>
+			<span></span>
+			<span>小布施町周遊シャトルバス「おぶせ浪漫号」</span>
+			<span></span>
+		  </p>
+		  <p>小布施駅～北斎館～岩松院～小布施駅～小布施総合公園</p>
+		</a>
+	  </li>
+	</ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="area03"><span>湯田中・中野・志賀高原エリア</span></h3>
+<a href="https://www.nagadenbus.co.jp/ticket-info/2021/05/post-55.php"><img alt="タッチ決済バナー.png" src="https://www.nagadenbus.co.jp/local/eb4de27b039211ee6c05aff4996aec31e46e7236.png" width="230" height="80" class="mt-image-none" /></a>
+<a href="http://www.busmori.jp/Concierge/lp/index.html" target="_blank"><img alt="バスもりバナー.png" src="http://www.nagadenbus.co.jp/news/ae00a3c8ec70906048344e2156f50cf7576dfa1c.png" width="230" height="80" class="mt-image-none" /></a>
+  <div class="routeList">
+	<ul>
+	  <li>
+		<a href="../fare/route.php?route=YDS02">
+		  <p>
+			<span>S</span>
+			<span>奥志賀高原線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/8efb812a79c9d10c65a12991f2f0eb234da96613.png" alt="タッチ決済" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/954bf0d826275bbc610ccd64a7373cb1beb57974.png" alt="QR決済" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+		  <p>湯田中駅～スノーモンキーパーク～志賀高原山の駅～奥志賀高原</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=YDS01">
+		  <p>
+			<span>K</span>
+			<span>白根火山線</span>
+			<span>[2025年3月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/8efb812a79c9d10c65a12991f2f0eb234da96613.png" alt="タッチ決済" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/954bf0d826275bbc610ccd64a7373cb1beb57974.png" alt="QR決済" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+		  <p>湯田中駅～スノーモンキーパーク～志賀高原山の駅～ほたる温泉～渋峠</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NKN01">
+		  <p>
+			<span>20</span>
+			<span>上林線</span>
+			<span>[2026年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/8679e148f642694d6047301e39b04af6313b46f3.png" alt="スマホ定期券"width="60px" height="30px">
+		  <p>信州中野駅～イオン中野店～湯田中駅～スノーモンキーパーク</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=IYM04">
+		  <p>
+			<span>9,10</span>
+			<span>中野野沢線</span>
+			<span>[2026年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/8679e148f642694d6047301e39b04af6313b46f3.png" alt="スマホ定期券"width="60px" height="30px">
+		  <p>信州中野駅～高社中学校～飯山駅～農林高校～野沢グランドホテル</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=NKN07">
+		  <p>
+			<span>11</span>
+			<span>合庁線</span>
+			<span></span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/8679e148f642694d6047301e39b04af6313b46f3.png" alt="スマホ定期券"width="60px" height="30px">
+		  <p>信州中野駅～高社中学校・長嶺団地～合同庁舎前～飯山駅</p>
+		</a>
+	  </li>
+	  <li class="another">
+		<a href="../fare/route.php?route=NKN05">
+		  <p>
+			<span></span>
+			<span>永田・立ヶ花線</span>
+			<span>[2026年4月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/8679e148f642694d6047301e39b04af6313b46f3.png" alt="スマホ定期券"width="60px" height="30px">
+		  <p>信州中野駅～立ヶ花橋～替佐駅～永田～親川</p>
+		</a>
+	  </li>
+	</ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="area04"><span>飯山・木島平・野沢温泉エリア</span></h3>
+  <div class="routeList">
+	<ul>
+	  <li>
+		<a href="./route.php?route=IYM04">
+		  <p>
+			<span>9,10</span>
+			<span>中野野沢線</span>
+			<span>[2026年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/8679e148f642694d6047301e39b04af6313b46f3.png" alt="スマホ定期券"width="60px" height="30px">
+		  <p>信州中野駅～高社中学校～飯山駅～農林高校～野沢グランドホテル</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="./route.php?route=NKN07">
+		  <p>
+			<span>11</span>
+			<span>合庁線</span>
+			<span></span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/8679e148f642694d6047301e39b04af6313b46f3.png" alt="スマホ定期券"width="60px" height="30px">
+		  <p>飯山駅～合同庁舎～長嶺団地・高社中学校～信州中野駅</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=IYM03">
+		  <p>
+			<span>12</span>
+			<span>温井線</span>
+			<span>[2019年10月1日改定]</span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+		  <p>飯山駅～飯山高校～戸狩野沢温泉駅～温井</p>
+		</a>
+	  </li>
+	  <li>
+		<a href="../fare/route.php?route=IYM02">
+		  <p>
+			<span>13</span>
+			<span>小境線</span>
+			<span></span>
+		  </p>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+		  <p>飯山駅～小境～戸狩温泉スキー場～戸狩野沢温泉駅</p>
+		</a>
+	  </li>
+	</ul>
+  </div>
+</section>
+  
+<section>
+  <h3 id="area05"><span>飯綱・信濃町エリア</span></h3>
+  <section>
+	<h4><span>飯綱町i（アイ）バス</span></h4>
+　　<img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">
+<img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">
+	<table class="table01">
+	  <tbody>
+		<tr><th>中学生以上</th><td>200円</td></tr>
+		<tr><th>小学生</th><td>100円</td></tr>
+		<tr><th>幼児（小学生入学前）</th><td>無料</td></tr>
+		<tr><th>身体・知的・精神障害者</th><td>正規料金の半額</td></tr>
+	  </tbody>
+	</table>
+  </section>
+
+  <section>
+	<h4><span>信濃町新交通バス</span></h4>
+　　<img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">
+	<table class="table01">
+	  <tbody>
+		<tr><th>観光シャトルバス</th><td>一律　500円（小人250円）</td></tr>
+		<tr><th>その他の路線</th><td>高校生以上　200円<br>中学生まで　無料</td></tr>
+	  </tbody>
+	</table>
+<hr>
+<span>≪記号の説明≫</span>
+<p><img src="https://www.nagadenbus.co.jp/local/ICON-KURURU.png" width="60px" height="30px">＝ICカード「KURURU」が使えます。</p>
+<p><img src="https://www.nagadenbus.co.jp/local/ICON-SeniorCARD.png" width="60px" height="30px">＝ICカード「KURURU」の高齢者パスポートが使えます。（※印＝須坂市内、千曲市内区間では通常運賃です）</p>
+<p><img src="https://www.nagadenbus.co.jp/local/8efb812a79c9d10c65a12991f2f0eb234da96613.png" alt="タッチ決済" width="60px" height="30px">＝VISA、Mastercard、JCB、銀聯、AMEX、Diners Club、DISCOVERのタッチ決済が使えます。</p>
+<p><img src="https://www.nagadenbus.co.jp/local/954bf0d826275bbc610ccd64a7373cb1beb57974.png" alt="QR決済" width="60px" height="30px">＝QR決済（PayPay，ALIPAY）が使えます。</p>
+<p><img src="https://www.nagadenbus.co.jp/local/d27cfd64a72cf26ce3f68ec99015c16c461e391c.png" alt="回数券"width="60px" height="30px">＝長電バス回数券（紙券）が使えます。</p>
+<p><img src="https://www.nagadenbus.co.jp/local/8679e148f642694d6047301e39b04af6313b46f3.png" alt="スマホ定期券"width="60px" height="30px">＝「バスもり！」スマホ定期券が使えます。</p>
+<p><img src="https://www.nagadenbus.co.jp/local/ICON-BUSLOCA.png" width="60px" height="30px">＝バス位置・接近情報（バス予報）の対象路線です。</p>
+<p><img src="https://www.nagadenbus.co.jp/local/f75839c2d11de6d4d919351697739e05327aa393.png" alt="須坂あしあとランプ" width="60px" height="30px">＝バス位置情報（あしあとランプ）の対象路線です。（須坂市内の特定の停留所標識）</p>
+  </section>
+</section>
+
+
+        </section>
+      </section>
+    </article>
+    <nav class="sidenav">
+  <div><span>路線バス</span></div>
+  <ul class="accordion">
+    <li>
+      <a href="/local/"><span>路線バス トップ</span></a>
+    </li>
+    <li class="close">
+      <a href="/local/diagram/"><span>時刻表</span></a>
+      <button class="openButton">
+        <p>
+          <span></span>
+          <span></span>
+        </p>
+      </button>
+      <ul class="first">
+        <li class="close">
+          <a href="/local/diagram/#area01"><span>長野エリア</span></a>
+          <button class="openButton">
+            <p>
+              <span></span>
+              <span></span>
+            </p>
+          </button>
+          <ul class="first">
+	        <li><a href="/local/diagram/route.php?route=NGN09"><span>51 平林線</span></a></li>
+	        <li><a href="/local/diagram/route.php?route=NGN07"><span>52 運動公園線</span></a></li>
+	        <li><a href="/local/diagram/route.php?route=NGN12"><span>55 牟礼線</span></a></li>
+	        <li><a href="/local/diagram/route.php?route=NGN03-1"><span>61 浅川西条線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN01"><span>62 東長野病院線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN02"><span>63 三才線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN04"><span>64 マユミダ・三才線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN15"><span>81 日赤線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN08"><span>82 須坂屋島線 綿内屋島線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN46"><span>46 大豆島保科温泉線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN03-2"><span>161 浅川西条市民病院線</span></a></li>            
+            <li><a href="https://www.nagadenbus.co.jp/local/pdf_TIME/0068ee6d071a233f9fa4e9eb175d5d5684f80214.pdf"><span>162 三才東長野病院線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SZK06"><span>R 屋代須坂線</span></a></li>
+            <li><a href="/local/community/gururingo/diagram/"><span>長野市循環バス「ぐるりん号」</span></a></li>
+            <li><a href="/local/community/tohokugururingo/diagram/"><span>長野市循環バス「東北ぐるりん号」</span></a></li>
+          </ul>
+        </li>
+        <li class="close">
+          <a href="/local/diagram/#area02"><span>須坂・高山・小布施エリア</span></a>
+          <button class="openButton">
+            <p>
+              <span></span>
+              <span></span>
+            </p>
+          </button>
+          <ul class="first">
+            <li><a href="/local/diagram/route.php?route=SZK01"><span>山田温泉線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SZK02"><span>仙仁線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SZK03"><span>米子線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SZK04"><span>北相ノ島線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SZK05"><span>明徳団地線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SZK06"><span>屋代須坂線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN08"><span>須坂屋島線　綿内屋島線</span></a></li>
+          </ul>
+        </li>
+        <li class="close">
+          <a href="/local/diagram/#area03"><span>湯田中・中野・志賀高原エリア</span></a>
+          <button class="openButton">
+            <p>
+              <span></span>
+              <span></span>
+            </p>
+          </button>
+          <ul class="first">
+            <li><a href="/local/diagram/route.php?route=NKN01"><span>上林線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NKN02"><span>立ヶ花線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NKN05"><span>永田・親川線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NKN06"><span>菅・角間線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NKN07"><span>合庁線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=IYM04"><span>中野木島線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=YDS01"><span>志賀高原線バス・スキーシャトルバス</span></a></li>
+          </ul>
+        </li>
+        <li class="close">
+          <a href="/local/diagram/#area04"><span>飯山・木島平・野沢温泉エリア</span></a>
+          <button class="openButton">
+            <p>
+              <span></span>
+              <span></span>
+            </p>
+          </button>
+          <ul class="first">
+            <li><a href="/local/diagram/route.php?route=IYM01"><span>野沢線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=IYM02"><span>小境線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=IYM03"><span>温井線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NKN07"><span>合庁線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=IYM04"><span>中野木島線</span></a></li>
+          </ul>
+        </li>
+        <li class="close">
+          <a href="/local/diagram/#area05"><span>飯綱・信濃町エリア</span></a>
+          <button class="openButton">
+            <p>
+              <span></span>
+              <span></span>
+            </p>
+          </button>
+          <ul class="first">
+            <li><a href="/local/diagram/route.php?route=IZN01"><span>飯綱温泉線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=IZN02"><span>地蔵久保線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=IZN03"><span>東柏原線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=NGN12"><span>吉村・牟礼線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SNM01"><span>古海・菅川線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SNM02"><span>熊坂・野尻線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SNM03"><span>高沢・六月線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SNM04"><span>長水・仁之倉線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SNM05"><span>石橋・板橋線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SNM06"><span>北信・高山線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SNM07"><span>荒瀬原線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=SNM08"><span>黒姫高原瑞穂線</span></a></li>
+            <li><a href="/local/diagram/route.php?route=OTH01"><span>国道線</span></a></li>
+                      </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="close">
+      <a href="/local/fare/"><span>運賃表</span></a>
+      <button class="openButton">
+        <p>
+          <span></span>
+          <span></span>
+        </p>
+      </button>
+      <ul class="first">
+        <li><a href="/local/fare/#area01"><span>長野エリア</span></a></li>
+        <li><a href="/local/fare/#area02"><span>須坂・高山・小布施エリア</span></a></li>
+        <li><a href="/local/fare/#area03"><span>湯田中・中野・志賀高原エリア</span></a></li>
+        <li><a href="/local/fare/#area04"><span>飯山・木島平・野沢温泉エリア</span></a></li>
+        <li><a href="/local/fare/#area05"><span>飯綱・信濃町エリア</span></a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="/local/regular/"><span>定期運賃表</span></a>
+    </li>
+    <li>
+      <a href="/local/route/"><span>路線図</span></a>
+    </li>
+    <li>
+      <a href="/community/"><span>コミュニティバス</span></a>
+    </li>
+    <li>
+      <a href="/ticket-otoku/"><span>おトクな乗車券のご案内</span></a>
+    </li>
+    <li>
+      <a href="/qa/#local"><span>路線バスQ&amp;A</span></a>
+    </li>
+  </ul>
+</nav>
+  </div>
+  <nav class="topicPath clearfix">
+    <div class="wrapper">
+      <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/" itemprop="item">
+            <span itemprop="name">ホーム</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="/local/" itemprop="item">
+            <span itemprop="name">路線バス</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <span itemprop="name">時刻表</span>
+          <meta itemprop="position" content="3" />
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <footer>
+  <div class="pageTop"><a href="#"><span>ページの<br>先頭へ</span></a></div>
+  <div class="wrapper clearfix">
+    <div class="right">
+    <nav>
+      <ul>
+        <li><a href="/policy/">個人情報の取り扱いに関する基本方針</a></li>
+        <li><a href="/sitemap/">サイトマップ</a></li>
+      </ul>
+    </nav>
+    <table>
+      <tbody>
+        <tr><th>高速バス予約センター</th><td>TEL 026-295-8050（8:00～18:00）</td></tr>
+        <tr><th>貸切バスお問い合わせ</th><td>TEL 026-295-8300（平日9:00～18:00）</td></tr>
+        <tr><th>長野営業所</th><td>TEL 026-296-3208</td></tr>
+        <tr><th>湯田中営業所</th><td>TEL 0269-33-2563</td></tr>
+        <tr><th>飯山営業所</th><td>TEL 0269-62-4131</td></tr>
+        <tr class="hireTop"><th colspan="2">長電ハイヤー</th></tr>
+        <tr class="hire"><th>志賀高原・湯田中</th><td>TEL 0269-33-3161（6:00～24:00）</td></tr>
+        <tr class="hire"><th>信州中野</th><td>TEL 0269-22-2108（6:00～24:00）</td></tr>
+        <tr class="hire last"><th>飯山・野沢温泉</th><td>TEL 0269-63-3232（6:00～22:00）</td></tr>
+        <tr><th>整備事業所</th><td>TEL 026-296-3210</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="left">
+        <a  class="logo" href="/"><h1><img src="/common/image/base/logoFooter.png" alt="長電バス(株)" width="245"></h1></a>
+    <address>
+      <p>本社</p>
+      <p>〒381-0011 長野県長野市大字村山471番地1</p>
+      <p>TEL 026-295-8008（平日9:00～18:00）</p>
+      <p>FAX 026-295-8060</p>
+    </address>
+  </div>
+</div>
+</footer>
+</body>
+</html>

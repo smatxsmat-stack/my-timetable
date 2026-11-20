@@ -133,9 +133,19 @@ def run(root=ROOT,fixture=None,today=None):
   before=data['routes'][k]['times'];after=r['times']
   if before!=after:diff.append({'route':k,'old':before,'new':after,'removed':[x for x in before if x not in after],'added':[x for x in after if x not in before]})
  if diff:nextdata['updated']=today
+ faredata=None
+ if (root/'fares.json').exists():
+  from fare_monitor import check
+  farefetch=fetch
+  if fixture:
+   fareurls={s['url']:s['file'] for s in read(root/'fares.json')['sources'].values()}
+   farefetch=lambda url:(fixture/'fares'/fareurls[url]).read_bytes()
+  faredata,fa,fc,fo=check(root,farefetch,today)
+  alerts.extend(fa);changes.extend(fc);observed.update(fo)
  status={'checkedAt':today,'alerts':alerts,'changedSources':changes,'updatedRoutes':[x['route'] for x in diff],'message':'公式資料を取得・確認しました。'+('GitHub Actionsで実行。' if os.environ.get('GITHUB_ACTIONS')=='true' else '定期監視はGitHubでの設定が必要です。')}
  # All validation finishes before publishing any file. CI deploys these in one commit.
  write(report/'comparison.json',{'date':today,'sourceChanges':changes,'timeDiff':diff,'alerts':alerts,'observed':observed})
+ if faredata is not None:write(root/'fares.json',faredata)
  write(root/'data.json',nextdata);write(root/'source-state.json',state);write(root/'holidays.json',cal);write(root/'monitor-status.json',status)
  for k,v in state.items():
   if k in raw and v['sha256']==sha(raw[k]):

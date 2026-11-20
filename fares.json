@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "shinano.pdf": {
+      "url": "https://www.shinanorailway.co.jp/rail-info/fare/docs/20260314_shinetsu.pdf",
+      "file": "shinano.pdf",
+      "sha256": "6329b32b475c1a505d3f33deb0ef6f27c3538d3e6e937a04812012ca7c5a4e57"
+    },
+    "shinano-index.html": {
+      "url": "https://www.shinanorailway.co.jp/rail-info/fare/",
+      "file": "shinano-index.html",
+      "sha256": "965c7d719ebd0141ead8746f53841eebef8801b0af2a7808267d0eb584c8aaec"
+    },
+    "nagaden.pdf": {
+      "url": "https://www.nagaden-net.co.jp/hubfs/N03_fare_20251201.pdf?hsLang=ja",
+      "file": "nagaden.pdf",
+      "sha256": "38f77e0f491ae8d9249af540ea0d04eb6943cb30ada1451ac7bc6cb76b049de2"
+    },
+    "nagaden-index.html": {
+      "url": "https://www.nagaden-net.co.jp/info/timetable/",
+      "file": "nagaden-index.html",
+      "sha256": "fb9ed720349e0507d8f4cb6f452936c580a9520cc75facd1b3d847e1c36f5fb3"
+    },
+    "nagaden-ticket.html": {
+      "url": "https://www.nagaden-net.co.jp/info/ticket",
+      "file": "nagaden-ticket.html",
+      "sha256": "f5eb55915170d14bdb104d8f63db693629fc598bc066be35fc36b4e68ea2702c"
+    },
+    "bus63.html": {
+      "url": "https://www.nagadenbus.co.jp/local/fare/bus-stop.php?bs=5&route=NGN02-1",
+      "file": "bus63.html",
+      "sha256": "0f2387a56056ad9eee9db7183fa6de12764b47c60a693823542fdfc43bd34b4f"
+    },
+    "bus64.html": {
+      "url": "https://www.nagadenbus.co.jp/local/fare/bus-stop.php?bs=5&route=NGN04",
+      "file": "bus64.html",
+      "sha256": "abbbc105d767b5b4c288d3f60ef0ef738c73b24bce0fa3dc712e73f2b353f563"
+    },
+    "bus-index.html": {
+      "url": "https://www.nagadenbus.co.jp/local/fare/",
+      "file": "bus-index.html",
+      "sha256": "5a97a6fd16eacfe378e22e687551c120f204ea76cae6bdc7d46da51c6a79f460"
+    },
+    "bus-payment.html": {
+      "url": "https://www.nagadenbus.co.jp/guide/ride/",
+      "file": "bus-payment.html",
+      "sha256": "2cc7f06e2c9e8efe3108cd817bb9a1550efe9d9d6dc3338e572042271ac025d5"
+    }
+  },
+  "groups": {
+    "shinano": {
+      "label": "北しなの線 三才―長野",
+      "sourceIds": [
+        "shinano.pdf",
+        "shinano-index.html"
+      ],
+      "validFrom": "2026-03-14",
+      "lastVerified": "2026-11-20",
+      "status": "verified",
+      "cash": 250,
+      "ic": 242,
+      "note": "大人片道普通運賃。きっぷとICで運賃が異なります。"
+    },
+    "nagaden": {
+      "label": "長野電鉄 朝陽―権堂",
+      "sourceIds": [
+        "nagaden.pdf",
+        "nagaden-index.html",
+        "nagaden-ticket.html"
+      ],
+      "validFrom": "2025-12-01",
+      "lastVerified": "2026-11-20",
+      "status": "verified",
+      "cash": 300,
+      "ic": null,
+      "express": 100,
+      "note": "ICで直接乗車はできません。B特急自由席は特急券100円が別途必要。券売機でのIC決済とIC乗車は異なります。"
+    },
+    "bus63": {
+      "label": "長電バス63 三才駅―権堂",
+      "sourceIds": [
+        "bus63.html",
+        "bus-index.html",
+        "bus-payment.html"
+      ],
+      "validFrom": "2025-03-01",
+      "lastVerified": "2026-11-20",
+      "status": "verified",
+      "cash": 650,
+      "ic": null,
+      "note": "公式運賃表は「三才駅」表記。県道停留所への適用とICの区間別料金は未確認。割引・ポイントを含まない大人片道運賃。"
+    },
+    "bus64": {
+      "label": "長電バス64 三才駅―権堂",
+      "sourceIds": [
+        "bus64.html",
+        "bus-index.html",
+        "bus-payment.html"
+      ],
+      "validFrom": "2025-03-01",
+      "lastVerified": "2026-11-20",
+      "status": "verified",
+      "cash": 650,
+      "ic": null,
+      "note": "公式運賃表は「三才駅」表記。県道停留所への適用とICの区間別料金は未確認。割引・ポイントを含まない大人片道運賃。"
+    }
+  }
+}

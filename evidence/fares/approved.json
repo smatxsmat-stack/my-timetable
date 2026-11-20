@@ -1,0 +1,50 @@
+{
+  "shinano": {
+    "label": "北しなの線 三才―長野",
+    "sourceIds": [
+      "shinano.pdf",
+      "shinano-index.html"
+    ],
+    "validFrom": "2026-03-14",
+    "cash": 250,
+    "ic": 242,
+    "note": "大人片道普通運賃。きっぷとICで運賃が異なります。"
+  },
+  "nagaden": {
+    "label": "長野電鉄 朝陽―権堂",
+    "sourceIds": [
+      "nagaden.pdf",
+      "nagaden-index.html",
+      "nagaden-ticket.html"
+    ],
+    "validFrom": "2025-12-01",
+    "cash": 300,
+    "ic": null,
+    "express": 100,
+    "note": "ICで直接乗車はできません。B特急自由席は特急券100円が別途必要。券売機でのIC決済とIC乗車は異なります。"
+  },
+  "bus63": {
+    "label": "長電バス63 三才駅―権堂",
+    "sourceIds": [
+      "bus63.html",
+      "bus-index.html",
+      "bus-payment.html"
+    ],
+    "validFrom": "2025-03-01",
+    "cash": 650,
+    "ic": null,
+    "note": "公式運賃表は「三才駅」表記。県道停留所への適用とICの区間別料金は未確認。割引・ポイントを含まない大人片道運賃。"
+  },
+  "bus64": {
+    "label": "長電バス64 三才駅―権堂",
+    "sourceIds": [
+      "bus64.html",
+      "bus-index.html",
+      "bus-payment.html"
+    ],
+    "validFrom": "2025-03-01",
+    "cash": 650,
+    "ic": null,
+    "note": "公式運賃表は「三才駅」表記。県道停留所への適用とICの区間別料金は未確認。割引・ポイントを含まない大人片道運賃。"
+  }
+}

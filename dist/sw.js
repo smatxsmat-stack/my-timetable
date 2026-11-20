@@ -1,4 +1,4 @@
-const CACHE='mytt-97cd854ed1f808b2';const ASSETS=["./", "./index.html", "./style.css", "./core.js", "./app.js", "./bundle.js", "./bundle.json", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./verification.html"];
+const CACHE='mytt-01debce06a90b9f2';const ASSETS=["./", "./index.html", "./style.css", "./core.js", "./app.js", "./bundle.js", "./bundle.json", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./verification.html"];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('mytt-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==self.location.origin)return;

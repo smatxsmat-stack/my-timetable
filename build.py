@@ -5,7 +5,10 @@ ROOT=Path(__file__).resolve().parent
 DIST=ROOT/'dist'
 def build():
  DIST.mkdir(exist_ok=True)
- package={k:json.loads((ROOT/f).read_text()) for k,f in [('data','data.json'),('holidays','holidays.json'),('status','monitor-status.json')]}
+ package={k:json.loads((ROOT/f).read_text()) for k,f in [('data','data.json'),('holidays','holidays.json'),('status','monitor-status.json'),('fares','fares.json'),('lastServices','last-services.json')]}
+ for key,proof in package['lastServices']['rail'].items():
+  filename='shinano.pdf' if key in ('sansai_nagano','nagano_sansai') else 'nagaden.pdf'
+  proof['verified']=hashlib.sha256((ROOT/'evidence'/filename).read_bytes()).hexdigest()==proof['sourceSha256']
  content=json.dumps(package,ensure_ascii=False,separators=(',',':'))
  (DIST/'bundle.json').write_text(content)
  (DIST/'bundle.js').write_text('const BUILTIN='+content.replace('<','\\u003c')+';')

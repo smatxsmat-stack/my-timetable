@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-18",
+  "note": "公式の通常ダイヤ末尾を目視照合。臨時便・端末追加便を含まない。既存168件とは独立した終電確認資料。",
+  "rail": {
+    "sansai_nagano": {
+      "times": [
+        [
+          "23:03",
+          "23:13",
+          "all"
+        ]
+      ],
+      "validFrom": "2026-03-14",
+      "sourceSha256": "a2a1f73bc27882f66c730a966e61c787a2bfcbf71910281721c81115ff73d3fc",
+      "url": "https://www.shinanorailway.co.jp/rail-info/time-table/",
+      "note": "全方向の末尾列に運転日制限なし。平日・土曜・日祝共通。"
+    },
+    "nagano_sansai": {
+      "times": [
+        [
+          "23:19",
+          "23:28",
+          "all"
+        ]
+      ],
+      "validFrom": "2026-03-14",
+      "sourceSha256": "a2a1f73bc27882f66c730a966e61c787a2bfcbf71910281721c81115ff73d3fc",
+      "url": "https://www.shinanorailway.co.jp/rail-info/time-table/",
+      "note": "全方向の末尾列に運転日制限なし。平日・土曜・日祝共通。"
+    },
+    "asahi_gondo": {
+      "times": [
+        [
+          "22:17",
+          "22:27",
+          "all"
+        ]
+      ],
+      "validFrom": "2021-03-13",
+      "sourceSha256": "555e2cafcad97066bb4e216e49d4e3ffe3ed1f5becc6d0bb972fda8c87bd75a1",
+      "url": "https://www.nagaden-net.co.jp/info/station/asahi",
+      "note": "全方向の末尾列に運転日制限なし。平日・土曜・日祝共通。"
+    },
+    "gondo_asahi": {
+      "times": [
+        [
+          "22:52",
+          "23:02",
+          "all"
+        ]
+      ],
+      "validFrom": "2021-03-13",
+      "sourceSha256": "555e2cafcad97066bb4e216e49d4e3ffe3ed1f5becc6d0bb972fda8c87bd75a1",
+      "url": "https://www.nagaden-net.co.jp/info/station/gondo",
+      "note": "全方向の末尾列に運転日制限なし。平日・土曜・日祝共通。"
+    }
+  }
+}

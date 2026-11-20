@@ -44,7 +44,7 @@ jobs:
       - name: Restore last good data after unexpected failure
         if: steps.monitor.outcome != 'success'
         run: |
-          git restore --source=HEAD -- data.json holidays.json source-state.json monitor-status.json evidence/ dist/
+          git restore --source=HEAD -- data.json holidays.json source-state.json monitor-status.json fares.json evidence/ dist/
           python - <<'PYCODE'
           import json
           from pathlib import Path
@@ -52,6 +52,11 @@ jobs:
           d=json.loads(p.read_text())
           d['alerts']=[{'source':'monitor','reason':'監視処理が異常終了したため、最後に保存されたデータへ戻しました。Actionsログを確認してください。'}]
           p.write_text(json.dumps(d,ensure_ascii=False,indent=2))
+          for filename in ['fares.json','data.json']:
+              p=Path(filename); value=json.loads(p.read_text())
+              for item in value.get('groups',value.get('routes',{})).values():
+                  item['status']='review_required'
+              p.write_text(json.dumps(value,ensure_ascii=False,indent=2))
           PYCODE
       - name: Build coherent offline application
         run: python build.py
@@ -82,7 +87,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data.json holidays.json source-state.json monitor-status.json evidence/ dist/
+          git add data.json holidays.json source-state.json monitor-status.json fares.json evidence/ dist/
           if ! git diff --cached --quiet; then
             git commit -m 'Verify official timetables and publish validated data'
             git push origin HEAD:main

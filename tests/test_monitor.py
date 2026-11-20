@@ -8,6 +8,7 @@ class MonitorTests(unittest.TestCase):
   self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name)/'app';shutil.copytree(ROOT,self.root,ignore=shutil.ignore_patterns('dist','__pycache__','.git','reports'))
   shutil.copytree(ROOT/'tests/fixtures',self.root,dirs_exist_ok=True)
   self.fixtures=Path(self.tmp.name)/'fixtures';shutil.copytree(ROOT/'tests/fixtures/evidence',self.fixtures)
+  shutil.copytree(ROOT/'evidence/fares',self.fixtures/'fares')
  def tearDown(self):self.tmp.cleanup()
  def go(self):
   with contextlib.redirect_stdout(io.StringIO()):return run(self.root,self.fixtures,'2026-11-16')
