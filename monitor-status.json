@@ -3,5 +3,5 @@
   "alerts": [],
   "changedSources": [],
   "updatedRoutes": [],
-  "message": "公式資料を取得・確認しました。定期監視はGitHubでの設定が必要です。"
+  "message": "公式資料を取得・確認しました。GitHub Actionsで実行。"
 }
