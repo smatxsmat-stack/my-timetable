@@ -2,38 +2,38 @@
   "shinano_page": {
     "url": "https://www.shinanorailway.co.jp/rail-info/time-table/",
     "sha256": "8a2fef8a5fc23edb3ed2838e78521f4d21a53a0a63b5b60c986562392610adf6",
-    "lastChecked": "2026-11-21"
+    "lastChecked": "2026-11-22"
   },
   "shinano_pdf": {
     "url": "https://www.shinanorailway.co.jp/rail-info/time-table/docs/20260314_time_table.pdf",
     "sha256": "a2a1f73bc27882f66c730a966e61c787a2bfcbf71910281721c81115ff73d3fc",
-    "lastChecked": "2026-11-21"
+    "lastChecked": "2026-11-22"
   },
   "nagaden_page": {
     "url": "https://www.nagaden-net.co.jp/info/timetable/",
     "sha256": "e682b2bcb9f149b6e2b3bbaeacefbca5cf341251e40fd905ee4a06fd1dc291c8",
-    "lastChecked": "2026-11-21"
+    "lastChecked": "2026-11-22"
   },
   "nagaden_pdf": {
     "url": "https://www.nagaden-net.co.jp/hubfs/ikoku20210313-01-1.pdf?hsLang=ja",
     "sha256": "555e2cafcad97066bb4e216e49d4e3ffe3ed1f5becc6d0bb972fda8c87bd75a1",
-    "lastChecked": "2026-11-21"
+    "lastChecked": "2026-11-22"
   },
   "bus63": {
     "url": "https://www.nagadenbus.co.jp/local/diagram/diagram_p.php?route=NGN02",
     "sha256": "5aacbdc88d75d71b40bd0b39d6d351338e6b1f234be1699f4ba45205d9e77260",
-    "lastChecked": "2026-11-21",
+    "lastChecked": "2026-11-22",
     "shape": "10e62f3b29595b7437b5ed7df85deb485969dd2742021e180edfab38fa262d62"
   },
   "bus64": {
     "url": "https://www.nagadenbus.co.jp/local/diagram/diagram_p.php?route=NGN04",
     "sha256": "9f33ee878c8a220a5e2ccb45b0a232be86e392586bdc208c1f2d7570f20b4297",
-    "lastChecked": "2026-11-21",
+    "lastChecked": "2026-11-22",
     "shape": "1d5d861d7f252154217de5fd2c1edec5e8d041056bccdac01f1136042e11c940"
   },
   "holidays": {
     "url": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv",
     "sha256": "cec37a743c96995cdb9cb52b685c9003634682a9b0e1a640a6b9b96881fe964a",
-    "lastChecked": "2026-11-21"
+    "lastChecked": "2026-11-22"
   }
 }
