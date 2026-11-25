@@ -55,7 +55,7 @@
         "shinano-index.html"
       ],
       "validFrom": "2026-03-14",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-25",
       "status": "verified",
       "cash": 250,
       "ic": 242,
@@ -69,7 +69,7 @@
         "nagaden-ticket.html"
       ],
       "validFrom": "2025-12-01",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-25",
       "status": "verified",
       "cash": 300,
       "ic": null,
@@ -84,7 +84,7 @@
         "bus-payment.html"
       ],
       "validFrom": "2025-03-01",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-25",
       "status": "verified",
       "cash": 650,
       "ic": null,
@@ -98,7 +98,7 @@
         "bus-payment.html"
       ],
       "validFrom": "2025-03-01",
-      "lastVerified": "2026-11-24",
+      "lastVerified": "2026-11-25",
       "status": "verified",
       "cash": 650,
       "ic": null,
